@@ -1,0 +1,9 @@
+.products__container__list {
+   padding: 4rem 0rem;
+}
+
+@media screen and (max-width: 360px) {
+   .products__container__list {
+      padding: 1rem 0rem;
+   }
+}

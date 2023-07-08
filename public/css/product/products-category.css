@@ -1,0 +1,8 @@
+.products__category {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+   margin: 0 auto;
+   justify-content: space-between;
+}

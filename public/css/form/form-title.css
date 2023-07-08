@@ -1,0 +1,10 @@
+.form__title {
+   font-size: 1rem;
+   font-weight: 700;
+}
+
+@media screen and (max-width: 1080px) {}
+
+@media screen and (max-width: 760px) {}
+
+@media screen and (max-width: 360px) {}

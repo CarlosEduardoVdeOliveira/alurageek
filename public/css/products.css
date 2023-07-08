@@ -1,0 +1,27 @@
+@import url("./product/products-container-list.css");
+@import url("./product/products-category.css");
+@import url("./product/products-category--title.css");
+@import url("./product/products-category--link.css");
+@import url("./product/products-list.css");
+@import url("./product/product.css");
+@import url("./product/product-image.css");
+@import url("./product/product-title.css");
+@import url("./product/product-price.css");
+@import url("./product/product-link.css");
+
+.products {
+   padding: 0 9.5rem;
+
+}
+
+@media screen and (max-width: 1080px) {
+   .products {
+      padding: 2rem;
+   }
+}
+
+@media screen and (max-width: 760px) {
+   .products {
+      padding: 1rem;
+   }
+}

@@ -1,0 +1,13 @@
+.products__list {
+   display: flex;
+   align-items: center;
+   flex: 1;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: space-between;
+   /*  display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-gap: 1rem;
+   width: 100%;
+   grid-auto-flow: column; */
+}

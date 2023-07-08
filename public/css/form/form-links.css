@@ -1,0 +1,12 @@
+.form__links {
+   display: flex;
+   flex-direction: column;
+   width: 11rem;
+   gap: 1.5rem;
+}
+
+@media screen and (max-width: 1080px) {}
+
+@media screen and (max-width: 760px) {}
+
+@media screen and (max-width: 360px) {}

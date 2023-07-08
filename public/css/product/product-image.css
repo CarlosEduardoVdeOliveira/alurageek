@@ -1,0 +1,12 @@
+.product__image {
+   flex: 1 0 0;
+   height: 10.875rem;
+   align-self: stretch;
+   background: lightgray 50% / cover no-repeat;
+}
+
+@media screen and (max-width: 1080px) {
+   .product__image {
+      scale: 95%;
+   }
+}

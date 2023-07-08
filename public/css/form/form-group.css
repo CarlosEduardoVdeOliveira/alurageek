@@ -1,0 +1,23 @@
+.form__group {
+   color: var(--gray-300);
+   font-size: 0.75rem;
+   line-height: 1.5rem;
+   display: flex;
+   flex-direction: column;
+   padding: 0.75rem;
+   width: 100%;
+   background-color: var(--gray-100);
+   border-bottom: 1px solid var(--gray-200);
+   border-radius: 0.25rem;
+}
+
+.form__group:focus-within {
+   border-bottom: 2px solid var(--blue-500);
+   color: var(--blue-500);
+}
+
+@media screen and (max-width: 1080px) {}
+
+@media screen and (max-width: 760px) {}
+
+@media screen and (max-width: 360px) {}

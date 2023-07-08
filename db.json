@@ -1,0 +1,146 @@
+[
+   {
+      "id": 1,
+      "name": "Produto XYZ",
+      "description": "Produto Star Wars",
+      "imageURL": "https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=812&q=80",
+      "price": 200,
+      "categoria":"Star Wars"
+   },
+   {
+      "id": 2,
+      "name": "Produto XYZ",
+      "description": "Produto Star Wars",
+      "imageURL": "https://images.unsplash.com/photo-1546561892-65bf811416b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "price": 200,
+      "categoria":"Star Wars"
+   },
+   {
+      "id": 3,
+      "name": "Produto XYZ",
+      "description": "Produto Star Wars",
+      "imageURL": "https://images.unsplash.com/photo-1579935110464-fcd041be62d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "price": 200,
+      "categoria":"Star Wars"
+   },
+   {
+      "id": 4,
+      "name": "Produto XYZ",
+      "description": "Produto Star Wars",
+      "imageURL": "https://images.unsplash.com/photo-1624467906831-1f80d34ed5ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80",
+      "price": 200,
+      "categoria":"Star Wars"
+   },
+   {
+      "id": 5,
+      "name": "Produto XYZ",
+      "description": "Produto Star Wars",
+      "imageURL": "https://images.unsplash.com/photo-1517071249658-6190519a3bb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80",
+      "price": 200,
+      "categoria":"Star Wars"
+   },
+   {
+      "id": 6,
+      "name": "Produto XYZ",
+      "description": "Produto Star Wars",
+      "imageURL": "https://images.unsplash.com/photo-1591927675938-b81b071d3e91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTk5fHxzdGFyJTIwd2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "price": 200,
+      "categoria":"Star Wars"
+   },
+   {
+      "id": 7,
+      "name": "Produto XYZ",
+      "description": "Produtos de consoles",
+      "imageURL": "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80",
+      "price": 200,
+      "categoria":"Consoles"
+   },
+   {
+      "id": 8,
+      "name": "Produto XYZ",
+      "description": "Produtos de consoles",
+      "imageURL": "https://images.unsplash.com/photo-1580327332925-a10e6cb11baa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=407&q=80",
+      "price": 200,
+      "categoria":"Consoles"
+   },
+   {
+      "id": 9,
+      "name": "Produto XYZ",
+      "description": "Produtos de consoles",
+      "imageURL": "https://images.unsplash.com/photo-1550921464-9f7a27f99edc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80",
+      "price": 200,
+      "categoria":"Consoles"
+   },
+   {
+      "id": 10,
+      "name": "Produto XYZ",
+      "description": "Produtos de consoles",
+      "imageURL": "https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1013&q=80",
+      "price": 200,
+      "categoria":"Consoles"
+   },
+   {
+      "id": 11,
+      "name": "Produto XYZ",
+      "description": "Produtos de consoles",
+      "imageURL": "https://images.unsplash.com/photo-1555864326-5cf22ef123cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=867&q=80",
+      "price": 200,
+      "categoria":"Consoles"
+   },
+   {
+      "id": 12,
+      "name": "Produto XYZ",
+      "description": "Produtos de consoles",
+      "imageURL": "https://images.unsplash.com/photo-1605134550917-5fe8cf25a125?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "price": 200,
+      "categoria":"Consoles"
+   },
+   {
+      "id": 13,
+      "name": "Produto XYZ",
+      "description": "Produto diversivicados",
+      "imageURL": "https://images.unsplash.com/photo-1595429035839-c99c298ffdde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
+      "price": 200,
+      "categoria":"Diversos"
+   },
+   {
+      "id": 14,
+      "name": "Produto XYZ",
+      "description": "Produto diversivicados",
+      "imageURL": "https://images.unsplash.com/photo-1605979257913-1704eb7b6246?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "price": 200,
+      "categoria":"Diversos"
+   },
+   {
+      "id": 15,
+      "name": "Produto XYZ",
+      "description": "Produto diversivicados",
+      "imageURL": "https://images.unsplash.com/photo-1523875194681-bedd468c58bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80",
+      "price": 200,
+      "categoria":"Diversos"
+   },
+   {
+      "id": 16,
+      "name": "Produto XYZ",
+      "description": "Produto diversivicados",
+      "imageURL": "https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80",
+      "price": 200,
+      "categoria":"Diversos"
+   },
+   {
+      "id": 17,
+      "name": "Produto XYZ",
+      "description": "Produto diversivicados",
+      "imageURL": "https://images.unsplash.com/photo-1620336655174-32ccc95d0e2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+      "price": 200,
+      "categoria":"Diversos"
+   },
+   {
+      "id": 18,
+      "name": "Produto XYZ",
+      "description": "Produto diversivicados",
+      "imageURL": "https://images.unsplash.com/photo-1638613067237-b1127ef06c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80",
+      "price": 200,
+      "categoria":"Diversos"
+   }
+]

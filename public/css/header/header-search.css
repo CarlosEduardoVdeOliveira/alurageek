@@ -1,0 +1,52 @@
+.header__search {
+   display: flex;
+   width: 24.5625rem;
+   padding: 0.5rem 1rem;
+   font-size: 1.5rem;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   border-radius: 1.25rem;
+   background: var(--gray-100);
+}
+
+.button--lupa {
+   cursor: pointer;
+   border: none;
+   background-color: transparent;
+   display: none;
+}
+
+
+.header__search::placeholder {
+   color: var(--gray-200);
+   font-size: 1.5rem;
+   background: url("../../assets/Icone_search.svg") no-repeat right center;
+}
+
+@media screen and (max-width: 1080px) {
+   .header__search {
+      width: 18rem;
+      font-size: 1rem;
+   }
+
+   .header__search::placeholder {
+      font-size: 1rem;
+   }
+}
+
+@media screen and (max-width: 760px) {
+   .header__search {
+      width: 17rem;
+   }
+}
+
+@media screen and (max-width: 560px) {
+   .header__search {
+      display: none;
+   }
+
+   .button--lupa {
+      display: block;
+   }
+}

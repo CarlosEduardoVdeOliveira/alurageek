@@ -1,0 +1,18 @@
+.product {
+   display: flex;
+   width: 10.25rem;
+   height: 15.75rem;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 0.5rem;
+}
+
+@media screen and (max-width: 1080px) {
+   .product {
+      margin-bottom: 1rem
+   }
+
+   .product:nth-last-child(-n + 2) {
+      display: none;
+   }
+}

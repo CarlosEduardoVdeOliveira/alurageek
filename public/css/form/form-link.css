@@ -1,0 +1,17 @@
+.form__link {
+   color: var(--gray-500);
+   font-size: 1rem;
+   font-weight: 500;
+   transition: all .2s ease-in-out;
+}
+
+.form__link:hover {
+   color: var(--blue-500);
+   text-decoration: underline;
+}
+
+@media screen and (max-width: 1080px) {}
+
+@media screen and (max-width: 760px) {}
+
+@media screen and (max-width: 360px) {}
