@@ -4,29 +4,22 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+   <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://fonts.googleapis.com"> -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
    <title>AluraGeek | Home</title>
    <link rel="shortcut icon" href="./public/assets/game.svg" type="image/x-icon">
    <link rel="stylesheet" href="./public/css/styles.css" />
-   <link rel="stylesheet" href="./public/css/container.css" />
-   <link rel="stylesheet" href="./public/css/button.css" />
-   <link rel="stylesheet" href="./public/css/header.css" />
-   <link rel="stylesheet" href="./public/css/carrosel/carrosel.css" />
-   <link rel="stylesheet" href="./public/css/products.css" />
-   <link rel="stylesheet" href="./public/css/form-container.css" />
-   <link rel="stylesheet" href="./public/css/footer.css" />
+
 </head>
 
 <body>
    <header class="header">
       <img class="header__logo" src="./public/assets/Logo.svg" alt="logo da AluraGeek">
       <input class="header__search" type="search" placeholder="O que deseja encontrar?" />
-      <button class="button button--transparent">Login</button>
+      <button class="button button--transparent" data-login>Login</button>
       <button class="button--lupa">
          <img src="./public/assets/Icone_search.svg" class="header__search--lupa" alt="">
       </button>
@@ -226,13 +219,15 @@
             <h3 class="form__title">Fale conosco</h3>
             <label for="name" class="form__group">
                Nome
-               <input id="name" name="name" type="text">
+               <input id="name" name="name" type="text" data-name>
             </label>
+            <span class="error">O campo precisa ter no minimo 3 caracteres</span>
             <label for="mensage" class="form__group__textarea form__group">
                Mensagem
-               <textarea id="mensage" name="mensage" type="text"></textarea>
+               <textarea id="mensage" name="mensage" type="text" data-message></textarea>
             </label>
-            <button class="form__button button--blue">Enviar mensagem</button>
+            <span class="error">O campo precisa ter no minimo 3 caracteres</span>
+            <button class="form__button button--blue" data-send>Enviar mensagem</button>
          </form>
       </section>
    </main>
