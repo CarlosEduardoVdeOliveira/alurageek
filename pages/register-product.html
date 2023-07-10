@@ -9,16 +9,15 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="shortcut icon" href="../public/assets/game.svg" type="image/x-icon">
    <link rel="stylesheet" href="../public/css/styles.css">
-   <link rel="stylesheet" href="../public/css/login/login.css">
-   <link rel="stylesheet" href="../public/css/login/form.css">
-   <title>AluraGeek | Login</title>
+   <link rel="stylesheet" href="../public/css/register-product/register-product.css">
+   <title>AluraGeek | Cadastrar produto</title>
 </head>
 
 <body>
    <header class="header">
       <img class="header__logo" src="../public/assets/Logo.svg" alt="logo da AluraGeek">
       <input class="header__search header__search--login" type="search" placeholder="O que deseja encontrar?" />
-      <button class="button button--transparent button__page--login" data-login>Login</button>
+      <button class="button button--transparent button__page--login">Login</button>
       <button class="button--lupa">
          <img src="../public/assets/Icone_search.svg" class="header__search--lupa" alt="">
       </button>
@@ -26,18 +25,32 @@
    <main>
       <section class="form__container--login">
          <form class="form__login">
-            <h2 class="form__login__title">Iniciar Sessão</h2>
-            <label for="email" class="form__group form__group--login">
-               Email
-               <input id="email" name="email" type="email" data-name>
+            <h2 class="form__login__title">Adicionar novo produto</h2>
+            <label for="url" class="form__group form__group--login">
+               URL da imagem
+               <input id="url" name="url" type="text">
             </label>
             <span class="error">O campo precisa ter no minimo 3 caracteres</span>
-            <label for="password" class="form__group form__group--login">
-               Senha
-               <input id="password" name="password" type="password" data-name>
+            <label for="category" class="form__group form__group--login">
+               Categoria
+               <input id="category" name="category" type="text">
+            </label>
+            <label for="name-product" class="form__group form__group--login">
+               Nome do produto
+               <input id="name-product" name="name-product" type="text">
             </label>
             <span class="error">O campo precisa ter no minimo 3 caracteres</span>
-            <button class="form__button--login button--blue" data-send>Entrar</button>
+            <label for="price" class="form__group form__group--login">
+               Preço do produto
+               <input id="price" name="price" type="text">
+            </label>
+            <span class="error">O campo precisa ter no minimo 3 caracteres</span>
+            <label for="description" class="form__group__textarea form__group form__group--login">
+               Descrição do produto
+               <textarea id="description" name="description" type="text"></textarea>
+            </label>
+            <span class="error">O campo precisa ter no minimo 3 caracteres</span>
+            <button class="form__button--login button--blue">Entrar</button>
          </form>
       </section>
       <section class="form__container">
@@ -58,15 +71,15 @@
             <h3 class="form__title">Fale conosco</h3>
             <label for="name" class="form__group">
                Nome
-               <input id="name" name="name" type="text" data-name>
+               <input id="name" name="name" type="text">
             </label>
             <span class="error">O campo precisa ter no minimo 3 caracteres</span>
             <label for="mensage" class="form__group__textarea form__group">
                Mensagem
-               <textarea id="mensage" name="mensage" type="text" data-message></textarea>
+               <textarea id="mensage" name="mensage" type="text"></textarea>
             </label>
             <span class="error">O campo precisa ter no minimo 3 caracteres</span>
-            <button class="form__button button--blue" data-send>Enviar mensagem</button>
+            <button class="form__button button--blue">Enviar mensagem</button>
          </form>
       </section>
    </main>

@@ -1,0 +1,22 @@
+@import url("./button-settings.css");
+
+.product__settings {
+   position: absolute;
+   display: flex;
+   right: 0.5rem;
+   gap: 1rem;
+   top: 0.5rem;
+}
+
+.button__page--home-logged {
+   display: none;
+}
+
+.product {
+   position: relative;
+   margin-bottom: 4rem;
+}
+
+.products__list {
+   margin-top: 1rem;
+}

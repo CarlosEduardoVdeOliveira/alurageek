@@ -3,6 +3,7 @@
    align-items: center;
    flex-wrap: wrap;
    width: 100%;
+   gap: 1rem;
    margin: 0 auto;
    justify-content: space-between;
 }

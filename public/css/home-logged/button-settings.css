@@ -1,0 +1,10 @@
+.button__settings {
+   background: transparent;
+   font-size: 1rem;
+   border: none;
+   color: var(--gray-100);
+}
+
+.button__settings:hover {
+   color: var(--blue-500);
+}
