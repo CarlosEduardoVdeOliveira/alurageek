@@ -1,0 +1,13 @@
+@import url("../detail/card-image.css");
+@import url("../detail/wrapper-details.css");
+@import url("../detail/details-title.css");
+@import url("../detail/details-price.css");
+@import url("../detail/details-description.css");
+
+.card {
+   display: flex;
+   align-items: center;
+   padding-top: 4rem;
+   padding-bottom: 4rem;
+   gap: 1rem;
+}
