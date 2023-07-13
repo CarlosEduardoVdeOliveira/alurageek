@@ -10,21 +10,21 @@
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
    <title>AluraGeek | Home</title>
-   <link rel="shortcut icon" href="../public/assets/game.svg" type="image/x-icon">
-   <link rel="stylesheet" href="../public/css/styles.css" />
-   <link rel="stylesheet" href="../public/css/home-logged/home-logged.css" />
+   <link rel="shortcut icon" href="../assets/game.svg" type="image/x-icon">
+   <link rel="stylesheet" href="../css/styles.css" />
+   <link rel="stylesheet" href="../css/home-logged/home-logged.css" />
 
 </head>
 
 <body>
    <header class="header">
       <a href="../index.html">
-         <img class="header__logo" src="../public/assets/Logo.svg" alt="logo da AluraGeek">
+         <img class="header__logo" src="../assets/Logo.svg" alt="logo da AluraGeek">
       </a>
       <input class="header__search" type="search" placeholder="O que deseja encontrar?" />
       <button class="button button--transparent button__page--home-logged" data-login>Login</button>
       <button class="button--lupa">
-         <img src="../public/assets/Icone_search.svg" class="header__search--lupa" alt="">
+         <img src="../assets/Icone_search.svg" class="header__search--lupa" alt="">
       </button>
    </header>
    <main>
@@ -32,12 +32,13 @@
          <div class="products__container__list">
             <div class="products__category">
                <h3 class="products__category--title">Todos os produtos</h3>
-               <button class="form__button button--blue">
+               <a href="./register-product.html" class="form__button button--blue">
                   Adicionar produto
-               </button>
+               </a>
             </div>
-            <ul class="products__list">
-               <li class="product">
+            <ul class="products__list" data-list>
+               <!-- 
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -53,7 +54,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -69,7 +70,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -85,7 +86,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -101,7 +102,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -117,7 +118,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -133,7 +134,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -149,7 +150,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -165,7 +166,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -181,7 +182,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -197,7 +198,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -213,7 +214,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -229,7 +230,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -245,7 +246,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -261,7 +262,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -277,7 +278,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -293,7 +294,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -309,7 +310,7 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
-               <li class="product">
+               <li class="product__logged">
                   <div class="product__settings">
                      <button class="button__settings">
                         <i class="fa-solid fa-trash"></i>
@@ -325,13 +326,14 @@
                   <p class="product__price">R$ 60,00</p>
                   <a class="product__link" href="#">Ver produto</a>
                </li>
+ -->
             </ul>
          </div>
       </section>
       <section class="form__container">
          <div class="form__group__links">
             <a href="../index.html">
-               <img class="form__logo" src="../public/assets/Logo.svg" alt="Logo AluraGeek">
+               <img class="form__logo" src="../assets/Logo.svg" alt="Logo AluraGeek">
             </a>
             <ul class="form__links">
                <li class="form__link__container"><a class="form__link" href="#">Quem somos nós</a></li>
@@ -374,7 +376,8 @@
          </li>
       </ul>
    </footer>
-   <script src="../public/js/script.js" type="module"></script>
+   <script src="../js/listProductsLogged.js" type="module"></script>
+   <script src="../js/deleteProduct.js" type="module"></script>
 </body>
 
 </html>

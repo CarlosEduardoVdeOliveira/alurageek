@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width: 1080px) {
-   .product__image {
+   /* .product__image {
       scale: 95%;
-   }
+   } */
 }

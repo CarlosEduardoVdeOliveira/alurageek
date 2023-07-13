@@ -10,20 +10,20 @@
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
    <title>AluraGeek | Home</title>
-   <link rel="shortcut icon" href="./public/assets/game.svg" type="image/x-icon">
-   <link rel="stylesheet" href="./public/css/styles.css" />
+   <link rel="shortcut icon" href="./assets/game.svg" type="image/x-icon">
+   <link rel="stylesheet" href="./css/styles.css" />
 
 </head>
 
 <body>
    <header class="header">
       <a href="index.html">
-         <img class="header__logo" src="./public/assets/Logo.svg" alt="logo da AluraGeek">
+         <img class="header__logo" src="./assets/Logo.svg" alt="logo da AluraGeek">
       </a>
       <input class="header__search" type="search" placeholder="O que deseja encontrar?" />
-      <button class="button button--transparent" data-login>Login</button>
+      <a href="./pages/login.html" class="button button--transparent" data-login>Login</a>
       <button class="button--lupa">
-         <img src="./public/assets/Icone_search.svg" class="header__search--lupa" alt="">
+         <img src="./assets/Icone_search.svg" class="header__search--lupa" alt="">
       </button>
    </header>
    <main>
@@ -31,182 +31,13 @@
          <a href="#">
          </a>
       </section>
-      <section class="products">
-         <div class="products__container__list">
-            <div class="products__category">
-               <h3 class="products__category--title">Star Wars</h3>
-               <a class="products__category--link" href="#">
-                  Ver todos<i class="fa-solid fa-arrow-right"></i>
-               </a>
-            </div>
-            <ul class="products__list">
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=812&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1546561892-65bf811416b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1579935110464-fcd041be62d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1624467906831-1f80d34ed5ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1517071249658-6190519a3bb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1591927675938-b81b071d3e91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTk5fHxzdGFyJTIwd2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-            </ul>
-         </div>
-         <div class="products__container__list">
-            <div class="products__category">
-               <h3 class="products__category--title">Consoles</h3>
-               <a class="products__category--link" href="#">Ver todos <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-            <ul class="products__list">
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1580327332925-a10e6cb11baa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=407&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1550921464-9f7a27f99edc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1013&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1555864326-5cf22ef123cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=867&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1605134550917-5fe8cf25a125?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-            </ul>
-         </div>
-         <div class="products__container__list">
-            <div class="products__category">
-               <h3 class="products__category--title">Diversos</h3>
-               <a class="products__category--link" href="#">Ver todos <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-            <ul class="products__list">
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1595429035839-c99c298ffdde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1605979257913-1704eb7b6246?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1523875194681-bedd468c58bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1620336655174-32ccc95d0e2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-               <li class="product">
-                  <img class="product__image"
-                     src="https://images.unsplash.com/photo-1638613067237-b1127ef06c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
-                     alt="">
-                  <span class="product__title">Produto XYZ</span>
-                  <p class="product__price">R$ 60,00</p>
-                  <a class="product__link" href="#">Ver produto</a>
-               </li>
-            </ul>
-         </div>
+      <section class="products" data-products>
+
       </section>
       <section class="form__container">
          <div class="form__group__links">
             <a href="index.html">
-               <img class="form__logo" src="./public/assets/Logo.svg" alt="Logo AluraGeek">
+               <img class="form__logo" src="./assets/Logo.svg" alt="Logo AluraGeek">
             </a>
 
             <ul class="form__links">
@@ -250,7 +81,13 @@
          </li>
       </ul>
    </footer>
-   <script src="./public/js/script.js" type="module"></script>
+   <script src="./js/listCategory.js" type="module"></script>
+   <!--  
+      <script src="./js/server.js" type="module"></script>
+      
+   
+   <script src="./js/updateProduct.js" type="module"></script>
+   -->
 </body>
 
 </html>

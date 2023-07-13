@@ -27,11 +27,11 @@
    </header>
    <main>
       <section class="form__container--login">
-         <form class="form__login" data-create-form>
+         <form class="form__login">
             <h2 class="form__login__title">Adicionar novo produto</h2>
             <label for="url" class="form__group form__group--login">
                URL da imagem
-               <input data-input="imageURL" id="url" name="url" type="text">
+               <input data-input="url" id="url" name="url" type="text">
             </label>
             <span class="error">O campo precisa ter no minimo 3 caracteres</span>
             <label for="category" class="form__group form__group--login">
@@ -53,7 +53,7 @@
                <textarea id="description" name="description" type="text" data-input="description"></textarea>
             </label>
             <span class="error">O campo precisa ter no minimo 3 caracteres</span>
-            <button class="form__button--login button--blue" data-create>Cadastrar</button>
+            <button class="form__button--login button--blue" data-update>Atualizar</button>
          </form>
       </section>
       <section class="form__container">
@@ -103,7 +103,7 @@
          </li>
       </ul>
    </footer>
-   <script src="../js/createProduct.js" type="module"></script>
+   <script src="../js/updateProduct.js" type="module"></script>
 </body>
 
 </html>

@@ -12,9 +12,15 @@
    display: none;
 }
 
-.product {
+.product__logged {
    position: relative;
    margin-bottom: 4rem;
+   display: flex;
+   width: 10.25rem;
+   height: 15.75rem;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 0.5rem;
 }
 
 .products__list {
