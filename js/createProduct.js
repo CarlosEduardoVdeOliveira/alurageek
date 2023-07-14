@@ -10,7 +10,7 @@ async function create(event) {
     "[data-input='description']"
   ).value;
   const price = document.querySelector("[data-input='price']").value;
-  await data.createProduct(name, category, imageURL, price, description);
+  await data.createProduct(name, description, imageURL, price, category);
   window.location.href = "../pages/home-logged.html";
 }
 
