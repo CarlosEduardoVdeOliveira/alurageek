@@ -20,9 +20,11 @@
    height: 15.75rem;
    flex-direction: column;
    align-items: flex-start;
+   overflow: hidden;
    gap: 0.5rem;
 }
 
 .products__list {
    margin-top: 1rem;
+   overflow: hidden;
 }

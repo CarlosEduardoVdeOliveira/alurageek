@@ -19,4 +19,4 @@ async function viewProduct() {
     `;
 }
 
-await viewProduct();
+viewProduct();

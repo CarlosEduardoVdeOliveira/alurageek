@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 17,
+      "id": 1,
       "name": "Produto XYZ",
       "description": "Produto diversivicados",
       "imageURL": "https://images.unsplash.com/photo-1620336655174-32ccc95d0e2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
@@ -9,7 +9,7 @@
       "category": "Diversos"
     },
     {
-      "id": 19,
+      "id": 2,
       "name": "Produto XYZ",
       "description": "Produto diversivicados",
       "imageURL": "https://images.unsplash.com/photo-1687979508085-a515fd4e2131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4OTMzODgxOQ&ixlib=rb-4.0.3&q=80&w=1080",
@@ -17,92 +17,44 @@
       "category": "Mario"
     },
     {
-      "id": 191,
-      "name": "Produto XYZ",
-      "description": "Produto diversivicados",
-      "imageURL": "https://images.unsplash.com/photo-1687979508085-a515fd4e2131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4OTMzODgxOQ&ixlib=rb-4.0.3&q=80&w=1080",
-      "price": "200",
-      "category": "Mario"
-    },
-    {
-      "id": 149,
-      "name": "Produto XYZ",
-      "description": "Produto diversivicados",
-      "imageURL": "https://images.unsplash.com/photo-1687979508085-a515fd4e2131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4OTMzODgxOQ&ixlib=rb-4.0.3&q=80&w=1080",
-      "price": "200",
-      "category": "Mario"
-    },
-    {
-      "id": 159,
-      "name": "Produto XYZ",
-      "description": "Produto diversivicados",
-      "imageURL": "https://images.unsplash.com/photo-1687979508085-a515fd4e2131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4OTMzODgxOQ&ixlib=rb-4.0.3&q=80&w=1080",
-      "price": "200",
-      "category": "Mario"
-    },
-    {
-      "id": 189,
-      "name": "Produto XYZ",
-      "description": "Produto diversivicados",
-      "imageURL": "https://images.unsplash.com/photo-1687979508085-a515fd4e2131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4OTMzODgxOQ&ixlib=rb-4.0.3&q=80&w=1080",
-      "price": "200",
-      "category": "Mario"
-    },
-    {
-      "id": 198,
-      "name": "Produto XYZ",
-      "description": "Produto diversivicados",
-      "imageURL": "https://images.unsplash.com/photo-1687979508085-a515fd4e2131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4OTMzODgxOQ&ixlib=rb-4.0.3&q=80&w=1080",
-      "price": "200",
-      "category": "Mario"
-    },
-    {
-      "id": 9,
-      "name": "Produto XYZ",
-      "description": "Produto diversivicados",
-      "imageURL": "https://images.unsplash.com/photo-1687979508085-a515fd4e2131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4OTMzODgxOQ&ixlib=rb-4.0.3&q=80&w=1080",
-      "price": "200",
-      "category": "Mario"
-    },
-    {
-      "id": 219,
-      "name": "Produto XYZ",
-      "description": "Produto diversivicados",
-      "imageURL": "https://images.unsplash.com/photo-1687979508085-a515fd4e2131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4OTMzODgxOQ&ixlib=rb-4.0.3&q=80&w=1080",
-      "price": "200",
-      "category": "Mario"
-    },
-    {
-      "id": 109,
-      "name": "Produto XYZ",
-      "description": "Produto diversivicados",
-      "imageURL": "https://images.unsplash.com/photo-1687979508085-a515fd4e2131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4OTMzODgxOQ&ixlib=rb-4.0.3&q=80&w=1080",
-      "price": "200",
-      "category": "Mario"
-    },
-    {
+      "id": 3,
       "name": "Goku",
-      "description": "Dragão ball",
+      "description": "post do goku, para colocar na parede do seu quarto.",
       "imageURL": "https://coisasdojapao.com/wp-content/uploads/2023/05/goku-dragon-ball-curiosidades-0.webp",
       "price": "100",
-      "category": "post do goku, para colocar na parede do seu quarto.",
-      "id": 220
+      "category": "Dragão ball"
     },
     {
+      "id": 4,
       "name": "Jogo do Dragon Ball Super",
       "description": "Depois que o Torneio do Poder é jogado, a Terra está em paz. Percebendo que ainda existem pessoas extremamente fortes no universo, Goku continua treinando para se tornar mais forte. Mas um dia, Freeza aparece na Terra com um misterioso Saiyajin chamado Broly, que confronta Goku e Vegeta. A primeira parte deste filme é baseada no mangá Dragon Ball Minus, que conta a origem de Goku e como ele veio para a Terra.",
       "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWATWw8YAmFNIIX-OCKrxMX_BZ4MHHO4twQ&usqp=CAU",
       "price": "50",
-      "category": "Dragão ball",
-      "id": 221
+      "category": "Jogos"
     },
     {
+      "id": 5,
       "name": "Jogo do Naruto",
       "description": "Uzumaki Naruto quer ser o melhor ninja de todos. Ele está indo muito bem, mas com o perigo iminente imposto pela misteriosa Akatsuki, Naruto percebe que ele deve treinar mais que nunca e deixa sua Vila para um intenso treinamento que o pressiona contra seus limites.",
       "imageURL": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe",
       "price": "20",
-      "category": "Jogos",
-      "id": 222
+      "category": "Jogos"
+    },
+    {
+      "id": 6,
+      "name": "Jogo do Nanatsu no Taizai",
+      "description": "Nanatsu no Taizai (七つの大罪? lit. Os Sete Pecados Capitais), também conhecido em Portugal como Os Sete Pecados Mortais, e no Brasil pelo título em língua inglesa The Seven Deadly Sins, é uma série de mangá escrita e ilustrada por Nakaba Suzuki. Foi serializada na revista Weekly Shōnen Magazine da Kodansha de outubro de 2012 até março de 2020, com os capítulos coletados em quarenta e um volumes de tankōbon. O mangá apresenta um cenário semelhante ao da Idade Média europeia, com um grupo principal de cavaleiros que representam os sete pecados capitais. Tendo como o principal personagem do mangá Meliodas (inspirado no rei Meliodas das lendas arturianas), o líder dos Sete Pecados Capitais, carregando o título de Pecado da Ira do Dragão.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/pt/5/5c/The_Seven_Deadly_Sins_JBC.jpg",
+      "price": "10",
+      "category": "Jogos"
+    },
+    {
+      "id": 7,
+      "name": "Guerreiro",
+      "description": "Em janeiro de 2015, o mangá Nanatsu no Taizai vendeu mais de dez milhões de cópias. O anime foi produzido pelo estúdio A-1 Pictures e foi transmitido no Japão na JNN e MBS entre 5 de outubro de 2014 até 29 de março de 2015. No Brasil o mangá é publicado pela Editora JBC desde março de 2015 em versão impressa,[1][2][3][4] posteriormente, a JBC também iniciou a publicação do mangá em volumes no formato digital (e-books) [5] e em capítulos simultâneos com o Japão.[6] Em setembro de 2015 o anime foi lançado no catálogo da Netflix no Brasil e em Portugal.[7] O mangá é também conhecido como The Seven Deadly Sins nos países de lingua inglesa do ocidente.",
+      "imageURL": "https://images.unsplash.com/photo-1529981188441-8a2e6fe30103?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "price": "600",
+      "category": "Diversos"
     }
   ]
 }

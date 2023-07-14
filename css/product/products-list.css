@@ -5,9 +5,10 @@
    flex-wrap: wrap;
    width: 100%;
    justify-content: space-between;
-   /*  display: grid;
-   grid-template-columns: repeat(6, 1fr);
-   grid-gap: 1rem;
-   width: 100%;
-   grid-auto-flow: column; */
+
 }
+
+/* .products__list:last-child {
+   gap: 1rem;
+   justify-content: flex-start;
+} */

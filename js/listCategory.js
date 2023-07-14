@@ -15,12 +15,13 @@ async function filterCategory(categories) {
 }
 await filterCategory(categoryList);
 
-export function createElementsCategories(list) {
+function createElementsCategories(list) {
   list.forEach((item) => {
     productListElement.innerHTML += `<div class="products__container__list">
 					<div class="products__category">
 						<h3 class="products__category--title">${item}</h3>
-						<a class="products__category--link" href="#">
+						<a class="products__category--link" 
+            href="../pages/list-products-per-category.html?q=${item}">
 								Ver todos<i class="fa-solid fa-arrow-right"></i>
 						</a>
 					</div>

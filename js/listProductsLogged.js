@@ -2,9 +2,9 @@ import { data } from "./server.js";
 
 const list = document.querySelector("[data-list]");
 
-function templateNotLoggedIn(name, price, image, description) {
+export function templateNotLoggedIn(name, price, image, description) {
   const template = `
-    <li class="product">
+    <li class="product" title="${name}">
       <img class="product__image" src="${image}" alt="${description}">
       <span class="product__title">${name}</span>
       <p class="product__price">R$ ${price}</p>
@@ -14,9 +14,9 @@ function templateNotLoggedIn(name, price, image, description) {
   return template;
 }
 
-function templateLoggedIn(id, image, name, price, description) {
+export function templateLoggedIn(id, image, name, price, description) {
   const template = `
-    <li class="product__logged" id=${id}>
+    <li class="product__logged" id=${id} title="${name}">
       <div class="product__settings">
           <button class="button__settings" id=${id} data-settings="deleted">
             <i class="fa-solid fa-trash"></i>
@@ -51,4 +51,4 @@ export async function createListProducts() {
   });
 }
 
-await createListProducts();
+createListProducts();

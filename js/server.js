@@ -67,7 +67,7 @@ async function deleteProduct(id) {
 }
 
 async function listProductsPerCategories(category) {
-  const connection = await fetch(`${baseURL}?q=${category}`);
+  const connection = await fetch(`${baseURL}?category=${category}`);
   const getCategory = await connection.json();
   return getCategory;
 }

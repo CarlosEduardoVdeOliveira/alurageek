@@ -12,6 +12,8 @@
       margin-bottom: 1rem
    }
 
+
+
    .product:nth-last-child(-n + 2) {
       display: none;
    }
