@@ -3,8 +3,13 @@
    font-size: 1rem;
    border: none;
    color: var(--gray-100);
+   transition: all .2s ease-in-out;
 }
 
 .button__settings:hover {
-   color: var(--blue-500);
+   color: var(--green-500);
+}
+
+.trash:hover {
+   color: var(--red-500);
 }

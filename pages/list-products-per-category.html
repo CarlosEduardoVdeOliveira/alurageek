@@ -9,6 +9,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
    <title>AluraGeek | Home</title>
    <link rel="shortcut icon" href="../assets/game.svg" type="image/x-icon">
    <link rel="stylesheet" href="../css/styles.css" />
@@ -30,13 +31,10 @@
    <main>
       <section class="products">
          <div class="products__container__list">
-            <div class="products__category">
-               <h3 class="products__category--title">Todos os produtos</h3>
-               <a href="./register-product.html" class="form__button button--blue">
-                  Adicionar produto
-               </a>
+            <div class="products__category" data-percategory="category">
+
             </div>
-            <ul class="products__list" data-percategory>
+            <ul class="products__list" data-percategory="products">
 
             </ul>
          </div>
@@ -87,6 +85,7 @@
          </li>
       </ul>
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
    <script src="../js/listProductsPerCategory.js" type="module"></script>
 </body>
 

@@ -27,19 +27,19 @@
    </header>
    <main>
       <section class="form__container--login">
-         <form class="form__login">
+         <form class="form__login" data-form='login'>
             <h2 class="form__login__title">Iniciar Sessão</h2>
             <label for="email" class="form__group form__group--login">
                Email
-               <input id="email" name="email" type="email" data-name>
+               <input id="email" name="email" type="email" data-email>
             </label>
-            <span class="error">O campo precisa ter no minimo 3 caracteres</span>
+            <span class="error" data-erro="formInputEmail">O campo precisa ter no minimo 6 caracteres</span>
             <label for="password" class="form__group form__group--login">
                Senha
-               <input id="password" name="password" type="password" data-name>
+               <input id="password" name="password" type="password" data-password>
             </label>
-            <span class="error">O campo precisa ter no minimo 3 caracteres</span>
-            <button class="form__button--login button--blue" data-send>Entrar</button>
+            <span class="error" data-erro="formInputPassword">O campo precisa ter no minimo 6 caracteres</span>
+            <button class="form__button--login button--blue">Entrar</button>
          </form>
       </section>
       <section class="form__container">
@@ -90,6 +90,8 @@
          </li>
       </ul>
    </footer>
+
+   <script src="../js/sessionStorage.js"></script>
 </body>
 
 </html>

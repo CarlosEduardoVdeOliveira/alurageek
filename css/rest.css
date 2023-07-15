@@ -12,6 +12,8 @@
    --blue-100: #D4E4FA;
    --blue-400: #5595E9;
    --blue-500: #2A7AE4;
+   --green-500: #0bb30b;
+   --yellow-500: #dbd811;
    --red-500: #eb4545;
 
 }
@@ -65,6 +67,7 @@ textarea:focus {
    display: none;
    color: var(--red-500);
    font-size: 0.75rem;
+   margin-bottom: 1rem;
 }
 
 body {

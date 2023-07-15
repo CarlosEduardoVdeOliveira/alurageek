@@ -9,6 +9,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
    <title>AluraGeek | Home</title>
    <link rel="shortcut icon" href="../assets/game.svg" type="image/x-icon">
    <link rel="stylesheet" href="../css/styles.css" />
@@ -52,16 +53,8 @@
             <div class="products__category">
                <h3 class="products__category--title">Produtos similares</h3>
             </div>
-            <ul class="products__list">
+            <ul class="products__list" data-similar>
                <li class="product">
-                  <div class="product__settings">
-                     <button class="button__settings">
-                        <i class="fa-solid fa-trash"></i>
-                     </button>
-                     <button class="button__settings">
-                        <i class="fa-solid fa-pen"></i>
-                     </button>
-                  </div>
                   <img class="product__image"
                      src="https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=812&q=80"
                      alt="">
@@ -198,6 +191,7 @@
          </li>
       </ul>
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
    <script src="../js/listProduct.js" type="module"></script>
    <!-- <script src="../js/script.js" type="module"></script> -->
 </body>
