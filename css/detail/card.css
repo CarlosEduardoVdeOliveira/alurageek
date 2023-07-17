@@ -3,6 +3,7 @@
 @import url("../detail/details-title.css");
 @import url("../detail/details-price.css");
 @import url("../detail/details-description.css");
+@import url("../detail/noExists.css");
 
 .card {
    display: flex;

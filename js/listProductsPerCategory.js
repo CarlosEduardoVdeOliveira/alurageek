@@ -1,5 +1,5 @@
 import { data } from "./server.js";
-
+import { template } from "./templates.js";
 export async function listPerCategory() {
   try {
     const categoryTitle = document.querySelector(
@@ -17,12 +17,13 @@ export async function listPerCategory() {
       </a>
     `;
     category.forEach((product) => {
-      list.innerHTML += `<li class="product" title="${product.name}">
-          <img class="product__image" src="${product.imageURL}" alt="${product.description}">
-          <span class="product__title">${product.name}</span>
-          <p class="product__price">R$ ${product.price}</p>
-          <a class="product__link" href="../pages/product-detail.html?q=${product.id}">Ver produto</a>
-        </li>`;
+      list.innerHTML += template.templateNotLoggedIn(
+        product.id,
+        product.name,
+        product.price,
+        product.imageURL,
+        product.description
+      );
     });
     if (categoryParam === "" || category.length === 0) {
       throw new Error("Categoria não encontrada!");
