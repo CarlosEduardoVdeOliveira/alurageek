@@ -1,13 +1,19 @@
 import { data } from "./server.js";
 import { template } from "./templates.js";
-
-const list = document.querySelector("[data-list]");
+/* import { template } from "./templates.js"; */
 
 export async function createListProducts() {
   try {
+    const email = sessionStorage.getItem("email");
+    const password = sessionStorage.getItem("password");
+    if (!email || !password) {
+      throw new Error("Erro: É preciso estar logado!");
+    }
     const products = await data.listAllProducts();
+    const list = document.querySelector("[data-list]");
+    let html = "";
     products.forEach((product) => {
-      list.innerHTML += template.templateLoggedIn(
+      html += template.templateLoggedIn(
         product.id,
         product.imageURL,
         product.name,
@@ -15,9 +21,7 @@ export async function createListProducts() {
         product.description
       );
     });
-    if (!sessionStorage.getItem("email")) {
-      throw new Error("Erro: É preciso estar logado!");
-    }
+    list.innerHTML = html;
   } catch (error) {
     Toastify({
       text: error.message,
@@ -31,4 +35,4 @@ export async function createListProducts() {
   }
 }
 
-createListProducts();
+await createListProducts();

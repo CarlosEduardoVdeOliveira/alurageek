@@ -14,12 +14,12 @@ function templateLoggedIn(id, image, name, price, description) {
   const template = `
     <li class="product__logged" id=${id} title="${name}">
       <div class="product__settings">
-          <button class="button__settings trash" id=${id} data-settings="deleted">
+          <button class="button__settings trash" id=${id} data-deleted>
             <i class="fa-solid fa-trash"></i>
           </button>
-          <button class="button__settings" id=${id} data-settings="updated">
+          <a class="button__settings" id=${id} href="../pages/update-product.html?q=${id}" data-updated>
             <i class="fa-solid fa-pen"></i>
-          </button>
+          </a>
       </div>
       <img class="product__image"
           src="${image}"

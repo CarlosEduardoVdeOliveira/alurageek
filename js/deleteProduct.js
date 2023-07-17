@@ -1,13 +1,14 @@
 import { data } from "./server.js";
 import { createListProducts } from "./listProductsLogged.js";
-
-async function deleteProduct() {
+async function deletedProduct() {
   try {
-    const buttonDelete = document.querySelectorAll("[data-settings='deleted']");
-    if (!sessionStorage.getItem("email")) {
+    const email = sessionStorage.getItem("email");
+    const password = sessionStorage.getItem("password");
+    if (!email || !password) {
       throw new Error("É preciso estar logado, para excluir um produto");
     }
-    console.log(buttonDelete);
+    const buttonDelete = document.querySelectorAll("[data-deleted]");
+
     buttonDelete.forEach((button) => {
       button.addEventListener("click", async (event) => {
         event.preventDefault();
@@ -24,8 +25,10 @@ async function deleteProduct() {
         background: "#eb4545",
         color: "#F5F5F5",
       },
+      onClick: function () {
+        window.location.href = "../pages/login.html";
+      },
     }).showToast();
-    return (window.location.href = "../pages/login.html");
   }
 }
-deleteProduct();
+deletedProduct();

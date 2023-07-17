@@ -46,6 +46,9 @@ async function updateProduct(id, name, description, imageURL, price, category) {
       category: category,
     }),
   });
+  if (!connection.ok) {
+    throw new Error("Não foi possível atualizar o produto!");
+  }
   const updateProduct = await connection.json();
   return updateProduct;
 }
