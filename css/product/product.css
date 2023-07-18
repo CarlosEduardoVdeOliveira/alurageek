@@ -14,7 +14,7 @@
 
 
 
-   .product:nth-last-child(-n + 2) {
+   /*  .product:nth-last-child(-n + 2) {
       display: none;
-   }
+   } */
 }

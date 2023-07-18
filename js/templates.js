@@ -1,4 +1,18 @@
-function templateNotLoggedIn(id, name, price, image, description) {
+function templateCategories(category) {
+  const template = `<div class="products__container__list">
+					<div class="products__category">
+						<h3 class="products__category--title">${category}</h3>
+						<a class="products__category--link" 
+            href="../pages/list-products-per-category.html?q=${category}">
+								Ver todos<i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
+          <ul class="products__list" data-category="${category}"></ul>
+			</div>`;
+  return template;
+}
+
+function templateLoggedOff(id, name, price, image, description) {
   const template = `
     <li class="product" title="${name}">
       <img class="product__image" src="${image}" alt="${description}">
@@ -7,6 +21,21 @@ function templateNotLoggedIn(id, name, price, image, description) {
       <a class="product__link" href="../pages/product-detail.html?q=${id}">Ver produto</a>
     </li>
   `;
+  return template;
+}
+function templateProductDetail(id, name, price, image, description) {
+  const template = `
+        <img
+            src="${image}"
+            class="card__image" alt="${description}">
+        <div class="wrapper__details">
+            <h2 class="details__title">${name}</h2>
+            <span class="details__price">R$ ${price}</span>
+            <p class="details__description">
+              ${description}
+            </p>
+        </div>
+      `;
   return template;
 }
 
@@ -34,6 +63,8 @@ function templateLoggedIn(id, image, name, price, description) {
 }
 
 export const template = {
-  templateNotLoggedIn,
+  templateCategories,
+  templateLoggedOff,
   templateLoggedIn,
+  templateProductDetail,
 };

@@ -12,24 +12,19 @@ async function viewProduct() {
 
     const products = await data.listAllProducts();
 
-    elementProduct.innerHTML = `
-        <img
-            src="${product.imageURL}"
-            class="card__image" alt="${product.description}">
-        <div class="wrapper__details">
-            <h2 class="details__title">${product.name}</h2>
-            <span class="details__price">R$ ${product.price}</span>
-            <p class="details__description">
-              ${product.description}
-            </p>
-        </div>
-      `;
+    elementProduct.innerHTML = template.templateProductDetail(
+      product.id,
+      product.name,
+      product.price,
+      product.imageURL,
+      product.description
+    );
     products.forEach((item) => {
       if (
         (item.category === product.category && item.id !== product.id) ||
         item.name === product.name
       ) {
-        return (listSimilarims.innerHTML += template.templateNotLoggedIn(
+        return (listSimilarims.innerHTML += template.templateLoggedOff(
           item.id,
           item.name,
           item.price,

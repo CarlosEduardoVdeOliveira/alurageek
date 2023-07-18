@@ -1,28 +1,12 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Produto XYZ",
-      "description": "Produto diversificados",
-      "imageURL": "https://images.unsplash.com/photo-1620336655174-32ccc95d0e2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
-      "price": "200",
-      "category": "Diversos"
-    },
-    {
-      "id": 2,
-      "name": "Produto XYZ",
-      "description": "Produto diversificados",
-      "imageURL": "https://images.unsplash.com/photo-1620336655174-32ccc95d0e2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
-      "price": "200",
-      "category": "Diversos"
-    }
-    ,{
-      "id": 3,
-      "name": "Produto XYZ",
-      "description": "Produto diversificados",
-      "imageURL": "https://images.unsplash.com/photo-1620336655174-32ccc95d0e2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
-      "price": "200",
-      "category": "Diversos"
+      "name": "Filme Naruto Shippuden",
+      "description": "Naruto Shippuden é a segunda parte do anime Naruto, que adapta a continuação do mangá original escrito por Masashi Kishimoto e consiste em 500 episódios ao todo. Ambientada dois anos após os eventos da série original, Shippuden acompanha o ninja adolescente Naruto e seus aliados.",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSouBkem8AK-WVYR3LSNwWpJVm4vCI7VzD8-A&usqp=CAU",
+      "price": "20",
+      "category": "Anime",
+      "id": 1
     }
   ]
 }

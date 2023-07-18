@@ -6,21 +6,23 @@ export async function createListProducts() {
   try {
     const email = sessionStorage.getItem("email");
     const password = sessionStorage.getItem("password");
-    if (!email || !password) {
-      throw new Error("Erro: É preciso estar logado!");
-    }
     const products = await data.listAllProducts();
     const list = document.querySelector("[data-list]");
     let html = "";
-    products.forEach((product) => {
-      html += template.templateLoggedIn(
-        product.id,
-        product.imageURL,
-        product.name,
-        product.price,
-        product.description
-      );
-    });
+    if (!email || !password) {
+      throw new Error("Erro: É preciso estar logado!");
+    }
+    products.length === 0
+      ? (html += `<h3>Não existe produtos!</h3>`)
+      : products.forEach((product) => {
+          html += template.templateLoggedIn(
+            product.id,
+            product.imageURL,
+            product.name,
+            product.price,
+            product.description
+          );
+        });
     list.innerHTML = html;
   } catch (error) {
     Toastify({

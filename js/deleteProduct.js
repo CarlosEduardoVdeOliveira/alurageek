@@ -13,6 +13,15 @@ async function deletedProduct() {
       button.addEventListener("click", async (event) => {
         event.preventDefault();
         await data.deleteProduct(button.id);
+        Toastify({
+          text: "Excluido com sucesso!",
+          duration: 3000,
+          close: true,
+          style: {
+            background: "#0bb30b",
+            color: "#F5F5F5",
+          },
+        }).showToast();
         await createListProducts();
       });
     });

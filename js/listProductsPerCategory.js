@@ -12,12 +12,9 @@ export async function listPerCategory() {
     const category = await data.listProductsPerCategories(categoryParam);
     categoryTitle.innerHTML = `
       <h3 class="products__category--title">${categoryParam}</h3>
-      <a href="./login.html" class="button form__button button--blue">
-        Login
-      </a>
     `;
     category.forEach((product) => {
-      list.innerHTML += template.templateNotLoggedIn(
+      list.innerHTML += template.templateLoggedOff(
         product.id,
         product.name,
         product.price,
