@@ -1,20 +1,44 @@
 .form__group {
-   color: var(--gray-300);
-   font-size: 0.75rem;
-   line-height: 1.5rem;
    display: flex;
    flex-direction: column;
-   padding: 0.75rem;
-   width: 100%;
    background-color: var(--gray-100);
-   border-bottom: 1px solid var(--gray-200);
    border-radius: 0.25rem;
+   border-bottom: 1px solid var(--gray-200);
+   position: relative;
+   margin: 1rem 0;
 }
 
-.form__group:focus-within {
-   border-bottom: 2px solid var(--blue-500);
+input.inputName {
+   width: 100%;
+   padding: .75rem;
+   border-bottom: 1px solid var(--gray-300);
+   border-radius: 5px;
+   outline: 0;
+   transition: all 0.2s ease-in-out;
+}
+
+label.labelInputName {
+   position: absolute;
+   bottom: .75rem;
+   left: .75rem;
+   color: var(--gray-300);
+   cursor: text;
+   transition: all 0.2s ease-in-out;
+}
+
+input.inputName:focus,
+input.inputName:valid {
+   border-bottom: 3px solid var(--blue-500);
+}
+
+
+.inputName:focus~label.labelInputName,
+.inputName:valid~label.labelInputName {
+   transform: translateY(16rem);
+   font-size: 0.75rem;
    color: var(--blue-500);
 }
+
 
 @media screen and (max-width: 1080px) {}
 

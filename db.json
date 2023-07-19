@@ -1,12 +1,28 @@
 {
   "products": [
     {
-      "name": "Filme Naruto Shippuden",
-      "description": "Naruto Shippuden é a segunda parte do anime Naruto, que adapta a continuação do mangá original escrito por Masashi Kishimoto e consiste em 500 episódios ao todo. Ambientada dois anos após os eventos da série original, Shippuden acompanha o ninja adolescente Naruto e seus aliados.",
-      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSouBkem8AK-WVYR3LSNwWpJVm4vCI7VzD8-A&usqp=CAU",
+      "name": "Guerreiros Z",
+      "description": "As aventuras de um poderoso guerreiro chamado Goku, seu filho Gohan e seus aliados, que se esforçam para defender a Terra das ameaças. Eles são auxiliados por um dragão que concede os desejos de quem quer que reúna as sete Esferas do Dragão.",
+      "imageURL": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/35e4ac6339f5fdcc164160a5755790cd.jpe",
       "price": "20",
-      "category": "Anime",
-      "id": 1
+      "category": "Dragão ball",
+      "id": 3
+    },
+    {
+      "name": "Guerreiro",
+      "description": "As aventuras de um poderoso guerreiro chamado Goku, seu filho Gohan e seus aliados, que se esforçam para defender a Terra das ameaças. Eles são auxiliados por um dragão que concede os desejos de quem quer que reúna as sete Esferas do Dragão.",
+      "imageURL": "https://static.wikia.nocookie.net/dubbing9585/images/7/7c/Dragon-Ball-Z.png/revision/latest?cb=20210113030611",
+      "price": "100",
+      "category": "Fil",
+      "id": 4
+    },
+    {
+      "name": "DBZ BudoKai 3",
+      "description": "Dragon Ball Z: Budokai Tenkaichi é uma série de jogos de luta desenvolvida pela Spike baseada na série de mangá Dragon Ball de Akira Toriyama. A série foi publicada pela Namco Bandai Games sob a marca Bandai no Japão e na Europa, e como Atari na América do Norte e Austrália de 2005 a 2007.",
+      "imageURL": "https://m.media-amazon.com/images/I/51VqM3veC5L._AC_UF1000,1000_QL80_.jpg",
+      "price": "20",
+      "category": "Jogos",
+      "id": 5
     }
   ]
 }

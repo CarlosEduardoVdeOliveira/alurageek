@@ -2,8 +2,9 @@
    display: flex;
    flex-direction: column;
    margin: 0 auto;
-   width: 35rem;
+   width: 28rem;
    gap: 0.5rem;
+   /* position: absolute; */
 }
 
 @media screen and (max-width: 1080px) {

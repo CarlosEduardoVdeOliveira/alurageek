@@ -21,7 +21,6 @@ async function productsInCategory() {
   categoryElement.forEach((element) => {
     products.forEach((item) => {
       const category = element.dataset.category;
-      console.log(item);
       if (item.category === category) {
         element.innerHTML += template.templateLoggedOff(
           item.id,
@@ -34,11 +33,12 @@ async function productsInCategory() {
     });
   });
 }
+
 async function createElementsCategories(list) {
-  await filterCategory(categoryList);
   list.forEach((item) => {
     productListElement.innerHTML += template.templateCategories(item);
   });
   productsInCategory();
 }
+await filterCategory(categoryList);
 createElementsCategories(categoryList);

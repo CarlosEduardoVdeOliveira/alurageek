@@ -2,6 +2,10 @@
    height: 7rem;
 }
 
+.form__group__textarea textarea {
+   height: 100%;
+}
+
 @media screen and (max-width: 1080px) {}
 
 @media screen and (max-width: 760px) {}
