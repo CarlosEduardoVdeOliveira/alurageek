@@ -37,6 +37,38 @@ textarea {
    -moz-osx-font-smoothing: grayscale;
 }
 
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+span::selection,
+strong::selection,
+a::selection {
+   color: var(--gray-100);
+   background-color: var(--blue-500);
+}
+
+::-webkit-scrollbar {
+   width: 0.5rem;
+   height: .8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 1px var(--gray-300);
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: var(--blue-400);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: var(--blue-400);
+}
+
 ul,
 li {
    list-style: none;
@@ -64,7 +96,6 @@ textarea:focus {
 }
 
 .error {
-   display: none;
    color: var(--red-500);
    font-size: 0.75rem;
    margin-bottom: 1rem;

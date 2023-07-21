@@ -1,6 +1,6 @@
 import { data } from "./server.js";
+import { formatPrice } from "./utils/format.js";
 const formCreate = document.querySelector("[data-create-form]");
-
 async function create(event) {
   event.preventDefault();
 
@@ -17,7 +17,13 @@ async function create(event) {
       "[data-input='description']"
     ).value;
     const price = document.querySelector("[data-input='price']").value;
-    await data.createProduct(name, description, imageURL, price, category);
+    await data.createProduct(
+      name,
+      description,
+      imageURL,
+      formatPrice(price),
+      category
+    );
 
     Toastify({
       text: "Produto cadastrado com sucesso!",
@@ -41,5 +47,4 @@ async function create(event) {
     }).showToast();
   }
 }
-
 formCreate.addEventListener("submit", (event) => create(event));

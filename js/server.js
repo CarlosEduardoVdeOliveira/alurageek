@@ -1,14 +1,23 @@
 const baseURL = "http://localhost:3000/products";
+const baseURLDeploy = "https://64b52385f3dbab5a95c6c6ad.mockapi.io/products";
 
 async function listAllProducts() {
-  const connection = await fetch(baseURL);
-  const getProducts = await connection.json();
-  return getProducts;
+  try {
+    const connection = await fetch(baseURL);
+    const getProducts = await connection.json();
+    return getProducts;
+  } catch (error) {
+    console.log(error);
+  }
 }
 async function listProduct(id) {
-  const connection = await fetch(`${baseURL}/${id}`);
-  const getProduct = await connection.json();
-  return getProduct;
+  try {
+    const connection = await fetch(`${baseURL}/${id}`);
+    const getProduct = await connection.json();
+    return getProduct;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 async function createProduct(name, description, imageURL, price, category) {
@@ -25,11 +34,15 @@ async function createProduct(name, description, imageURL, price, category) {
       category: category,
     }),
   });
-  if (!connection.ok) {
-    throw new Error("Não foi possível cadastrar o novo produto!");
+  try {
+    if (!connection.ok) {
+      throw new Error("Não foi possível cadastrar o novo produto!");
+    }
+    const create = await connection.json();
+    return create;
+  } catch (error) {
+    console.log(error);
   }
-  const create = await connection.json();
-  return create;
 }
 
 async function updateProduct(id, name, description, imageURL, price, category) {
@@ -46,11 +59,15 @@ async function updateProduct(id, name, description, imageURL, price, category) {
       category: category,
     }),
   });
-  if (!connection.ok) {
-    throw new Error("Não foi possível atualizar o produto!");
+  try {
+    if (!connection.ok) {
+      throw new Error("Não foi possível atualizar o produto!");
+    }
+    const updateProduct = await connection.json();
+    return updateProduct;
+  } catch (error) {
+    console.log(error);
   }
-  const updateProduct = await connection.json();
-  return updateProduct;
 }
 
 async function deleteProduct(id) {
@@ -70,9 +87,13 @@ async function deleteProduct(id) {
 }
 
 async function listProductsPerCategories(category) {
-  const connection = await fetch(`${baseURL}?category=${category}`);
-  const getCategory = await connection.json();
-  return getCategory;
+  try {
+    const connection = await fetch(`${baseURL}?category=${category}`);
+    const getCategory = await connection.json();
+    return getCategory;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 export const data = {

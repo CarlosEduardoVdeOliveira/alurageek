@@ -9,15 +9,16 @@ async function filterCategory(categories) {
     categories.push(product.category);
   });
 
-  let categoryFilter = await categories.filter(
+  categoryList = await categories.filter(
     (item, indice, array) => array.indexOf(item) === indice
   );
-  return (categoryList = categoryFilter);
+  return categoryList;
 }
 
 async function productsInCategory() {
   const categoryElement = document.querySelectorAll("[data-category]");
   const products = await data.listAllProducts();
+
   categoryElement.forEach((element) => {
     products.forEach((item) => {
       const category = element.dataset.category;

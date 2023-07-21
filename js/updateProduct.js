@@ -1,14 +1,11 @@
 import { data } from "./server.js";
+import { formatPrice } from "./utils/format.js";
+import { isLogged } from "./verifySession.js";
 const update = document.querySelector("[data-update-form]");
 
 async function updatedItem(event) {
   event.preventDefault();
   try {
-    const email = sessionStorage.getItem("email");
-    const password = sessionStorage.getItem("password");
-    if (!email || !password) {
-      throw new Error("É preciso estar logado para atualizar o produto!");
-    }
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get("q");
 
@@ -19,13 +16,12 @@ async function updatedItem(event) {
     const description = document.querySelector(
       "[data-input='description']"
     ).value;
-
     const product = {
       id,
       name: name,
       description: description,
       imageURL: image,
-      price: price,
+      price: formatPrice(price),
       category: category,
     };
     await data.updateProduct(
@@ -45,6 +41,7 @@ async function updatedItem(event) {
         color: "#F5F5F5",
       },
     }).showToast();
+    isLogged();
     window.location.href = "../pages/home-logged.html";
   } catch (error) {
     Toastify({

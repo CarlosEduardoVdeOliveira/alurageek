@@ -52,20 +52,21 @@
             </ul>
          </div>
 
-         <form class="form">
+         <form class="form" data-form="contact">
             <h3 class="form__title">Fale conosco</h3>
             <div class="form__group">
                <label for="name" class="labelInputName">Nome</label>
-               <input id="name" name="name" type="text" class="inputName" required data-name>
+               <input id="name" name="name" type="text" class="inputName" required data-name minlength="3">
             </div>
-            <span class="error">O campo precisa ter no minimo 3 caracteres</span>
+            <span class="error"></span>
             <div class="form__group form__group__textarea">
                <label for="mensage">
                   Mensagem
                </label>
-               <textarea id="mensage" name="mensage" type="text" required data-message></textarea>
+               <textarea id="mensage" name="mensage" type="text" required data-message minlength="3"
+                  maxlength="500"></textarea>
             </div>
-            <span class="error">O campo precisa ter no minimo 3 caracteres</span>
+            <span class="error"></span>
             <button class="form__button button--blue" data-send>Enviar mensagem</button>
          </form>
       </section>
@@ -87,7 +88,8 @@
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
    <script src="./js/listCategory.js" type="module"></script>
-   <script src="./js/script.js" type="module"></script>
+   <script src="./js/verifySession.js" type="module"></script>
+   <script src="./js/validateForm.js" type="module"></script>
    <!--  
       <script src="./js/server.js" type="module"></script>
       

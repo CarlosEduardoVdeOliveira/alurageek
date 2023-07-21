@@ -1,6 +1,5 @@
 import { data } from "./server.js";
 import { template } from "./templates.js";
-/* import { template } from "./templates.js"; */
 
 export async function createListProducts() {
   try {
