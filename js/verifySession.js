@@ -17,11 +17,3 @@ buttonLogin.addEventListener("click", (event) => {
     window.location.href = "../pages/login.html";
   }
 });
-
-export function isLogged() {
-  const email = sessionStorage.getItem("email");
-  const password = sessionStorage.getItem("password");
-  if (!email || !password) {
-    throw new Error("É preciso estar logado para atualizar o produto!");
-  }
-}

@@ -4,10 +4,10 @@ async function deletedProduct() {
   try {
     const email = sessionStorage.getItem("email");
     const password = sessionStorage.getItem("password");
+    const buttonDelete = document.querySelectorAll("[data-deleted]");
     if (!email || !password) {
       throw new Error("É preciso estar logado, para excluir um produto");
     }
-    const buttonDelete = document.querySelectorAll("[data-deleted]");
 
     buttonDelete.forEach((button) => {
       button.addEventListener("click", async (event) => {

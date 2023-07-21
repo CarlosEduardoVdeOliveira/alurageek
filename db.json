@@ -9,14 +9,6 @@
       "id": 3
     },
     {
-      "name": "Carro Hyudai",
-      "description": "Um belo carro Hyudai em perfeitas condições.\nUm belo carro Hyudai em perfeitas condições.\nUm belo carro Hyudai em perfeitas condições.",
-      "imageURL": "https://images.unsplash.com/photo-1667805630247-28c2a8db1cb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80",
-      "price": "150.380,28",
-      "category": "Automóveis",
-      "id": 4
-    },
-    {
       "name": "DBZ BudoKai 3",
       "description": "Dragon Ball Z: Budokai Tenkaichi é uma série de jogos de luta desenvolvida pela Spike baseada na série de mangá Dragon Ball de Akira Toriyama. A série foi publicada pela Namco Bandai Games sob a marca Bandai no Japão e na Europa, e como Atari na América do Norte e Austrália de 2005 a 2007.",
       "imageURL": "https://m.media-amazon.com/images/I/51VqM3veC5L._AC_UF1000,1000_QL80_.jpg",
@@ -25,36 +17,12 @@
       "id": 5
     },
     {
-      "name": "Pc Gamer Completo Intel I7 10700F 16GB + RTX 2060",
-      "description": "Pc Gamer Completo Intel I7 10700F 16GB + RTX 2060 / Computadores com alta eficiência, garantindo fps com bons gráficos, para aquele que não se contentam apenas com jogabilidade e buscam jogos mais detalhados.",
-      "imageURL": "https://cdn.dooca.store/4901/products/i7-10700f-rtx-2060-completo_1600x1600.png?v=1675369097",
-      "price": "7.460,22",
-      "category": "Informática",
-      "id": 6
-    },
-    {
       "name": "Gabinete gamer com lateral em acrílico e LED frontal;",
       "description": "\n\nGabinete gamer de alto nível, contendo um belo design com detalhes em LED, garantindo uma bela aparência para a sua máquina.\n",
       "imageURL": "https://api.dooca.store/files/4901/files/1-6.png",
       "price": "659,29",
       "category": "Informática",
       "id": 7
-    },
-    {
-      "name": "Controle",
-      "description": "Controle para ps5, para jogar com seu DUO",
-      "imageURL": "https://images.unsplash.com/photo-1550921464-9f7a27f99edc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80",
-      "price": 200,
-      "category": "Jogos",
-      "id": 8
-    },
-    {
-      "name": "Produto XYZ",
-      "description": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
-      "imageURL": "https://images.unsplash.com/photo-1529981188441-8a2e6fe30103?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-      "price": "60,00",
-      "category": "Diversos",
-      "id": 9
     }
   ]
 }
