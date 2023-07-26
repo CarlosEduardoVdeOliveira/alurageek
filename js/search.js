@@ -8,16 +8,33 @@ const list = document.querySelector("[data-products]");
 async function search(event) {
   event.preventDefault();
   const searchTerm = await data.search(searchInput.value);
-  list.innerHTML = "";
-  list.style.display = "flex";
-  searchTerm.forEach((product) => {
-    list.innerHTML += template.templateLoggedOff(
-      product.id,
-      product.name,
-      product.price,
-      product.imageURL,
-      product.description
-    );
-  });
+  if (searchInput.value === "") {
+    Toastify({
+      text: "Preencha o campo de pesquisa!",
+      duration: 3000,
+      close: true,
+      style: {
+        background: "#eb4545",
+        color: "#F5F5F5",
+      },
+    }).showToast();
+  } else {
+    list.innerHTML = "";
+    list.style.display = "flex";
+    searchInput.value = "";
+
+    if (searchTerm.length === 0) {
+      list.innerHTML = `<h2>Produto não encontrado!</h2>`;
+    }
+    searchTerm.forEach((product) => {
+      list.innerHTML += template.templateLoggedOff(
+        product.id,
+        product.name,
+        product.price,
+        product.imageURL,
+        product.description
+      );
+    });
+  }
 }
 buttonSearch.addEventListener("click", (event) => search(event));

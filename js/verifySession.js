@@ -4,7 +4,7 @@ buttonLogin.addEventListener("click", (event) => {
   event.preventDefault();
   if (sessionStorage.getItem("email") && sessionStorage.getItem("password")) {
     Toastify({
-      text: "Já há um usuário logado!",
+      text: "Já há uma sessão iniciada!",
       duration: 3000,
       close: true,
       style: {

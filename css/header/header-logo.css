@@ -2,6 +2,10 @@
    width: 11rem;
 }
 
+.header__logo--login {
+   width: 11rem;
+}
+
 @media screen and (max-width: 1080px) {
    .header__logo {
       width: 8rem;

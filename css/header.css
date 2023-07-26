@@ -11,6 +11,16 @@
    margin: 0 auto;
 }
 
+.header--login {
+   align-items: center;
+   justify-content: center;
+}
+
+.button--adim {
+   font-size: 1rem;
+   width: auto;
+}
+
 @media screen and (max-width: 1080px) {
    .header {
       padding: 2rem 1rem;

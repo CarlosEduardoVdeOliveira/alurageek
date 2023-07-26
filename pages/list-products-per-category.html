@@ -22,11 +22,13 @@
       <a href="../index.html">
          <img class="header__logo" src="../assets/Logo.svg" alt="logo da AluraGeek">
       </a>
-      <input class="header__search" type="search" placeholder="O que deseja encontrar?" />
-      <button class="button button--transparent" data-login>Login</button>
-      <button class="button--lupa">
-         <img src="../assets/Icone_search.svg" class="header__search--lupa" alt="">
-      </button>
+      <div class="header__search__group">
+         <input data-search="input" class="header__search--input" type="text" placeholder="O que deseja encontrar?" />
+         <button class="header__search--button" data-search="button">
+            <i class="fa-solid fa-magnifying-glass" style="color: #A2A2A2;"></i>
+         </button>
+      </div>
+      <a href="./pages/login.html" class="button button--transparent" data-login>Login</a>
    </header>
    <main>
       <section class="products">
