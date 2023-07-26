@@ -12,7 +12,6 @@
    <link rel="shortcut icon" href="./assets/game.svg" type="image/x-icon">
    <link rel="stylesheet" href="./css/styles.css" />
 
-
 </head>
 
 <body>
@@ -55,21 +54,19 @@
          <form class="form" data-form="contact">
             <h3 class="form__title">Fale conosco</h3>
             <div class="form__group">
-               <label for="name" class="labelInputName">Nome</label>
-               <input id="name" name="name" type="text" class="inputName" required data-name minlength="3"
-                  maxlength="20">
+               <input id="name" name="name" type="text" class="form__group--input" required data-name minlength="3">
+               <label for="name" class="form__group--label">Nome</label>
                <span class="error"></span>
             </div>
             <div class="form__group form__group__textarea" data-group-input>
-               <label for="mensage">
-                  Mensagem
-               </label>
                <textarea id="mensage" name="message" type="text" required data-message minlength="3"
                   maxlength="120"></textarea>
+               <label for="message" class="form__group--label--textarea">Mensagem</label>
                <span class="error"></span>
             </div>
             <button class="form__button button--blue" data-send="message">Enviar mensagem</button>
          </form>
+
       </section>
    </main>
    <footer>

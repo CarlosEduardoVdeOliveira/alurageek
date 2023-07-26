@@ -1,0 +1,13 @@
+.form__group--input {
+  width: 100%;
+  padding: .75rem;
+  border-bottom: 1px solid var(--gray-300);
+  border-radius: 5px;
+  outline: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.form__group--input:focus,
+.form__group--input:valid {
+  border-bottom: 2px solid var(--blue-400);
+}

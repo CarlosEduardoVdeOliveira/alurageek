@@ -2,7 +2,7 @@ import { data } from "./server.js";
 import { formatPrice } from "./utils/format.js";
 
 const updateForm = document.querySelector("[data-update-form]");
-const name = document.querySelector("[data-input='name']");
+const name = document.querySelector("[data-input='name-product']");
 const image = document.querySelector("[data-input='url']");
 const price = document.querySelector("[data-input='price']");
 const category = document.querySelector("[data-input='category']");

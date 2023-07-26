@@ -6,7 +6,7 @@
 }
 
 .form__link:hover {
-   color: var(--blue-500);
+   color: var(--blue-400);
    text-decoration: underline;
 }
 

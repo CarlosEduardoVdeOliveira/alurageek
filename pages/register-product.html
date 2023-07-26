@@ -27,34 +27,38 @@
       <section class="form__container--login">
          <form class="form__login" data-create-form>
             <h2 class="form__login__title">Adicionar novo produto</h2>
-            <label for="url" class="form__group form__group--login">
-               URL da imagem
-               <input minlength="10" required data-input="imageURL" id="url" name="url" type="text">
-            </label>
-            <span class="error"></span>
-            <label for="category" class="form__group form__group--login">
-               Categoria
-               <input minlength="3" maxlength="20" required data-input="category" id="category" name="category"
-                  type="text">
-            </label>
-            <label for="name-product" class="form__group form__group--login">
-               Nome do produto
-               <input minlength="3" maxlength="20" required data-input="name" id="name-product" name="name-product"
-                  type="text">
-            </label>
-            <span class="error"></span>
-            <label for="price" class="form__group form__group--login">
-               Preço do produto
-               <input minlength="3" required data-input="price" pattern="^\d+(\,\d{2})?$" id="price" name="price"
-                  type="text">
-            </label>
-            <span class="error"></span>
-            <label for="description" class="form__group__textarea form__group form__group--login">
-               Descrição do produto
-               <textarea minlength="3" maxlength="120" required id="description" name="description" type="text"
-                  data-input="description"></textarea>
-            </label>
-            <span class="error"></span>
+            <div class="form__group">
+               <input id="url" name="url" type="text" class="form__group--input" required data-input="url"
+                  minlength="10">
+               <label for="url" class="form__group--label">URL da imagem</label>
+               <span class="error"></span>
+            </div>
+            <div class="form__group">
+               <input id="category" name="category" type="text" class="form__group--input" required
+                  data-input="category" minlength="3" maxlength="20">
+               <label for="category" class="form__group--label">Categoria</label>
+               <span class="error"></span>
+            </div>
+            <div class="form__group">
+               <input id="name" name="name" type="text" class="form__group--input" required data-input="name-product"
+                  minlength="3" maxlength="20">
+               <label for="name" class="form__group--label">Nome do produto</label>
+               <span class="error"></span>
+            </div>
+            <div class="form__group">
+               <input id="price" name="price" type="text" class="form__group--input" required data-input="price"
+                  minlength="3">
+               <label for="price" class="form__group--label">Preço do produto</label>
+               <span class="error"></span>
+            </div>
+            <div class="form__group form__group__textarea" data-group-input>
+               <textarea id="description" name="description" type="text" required data-input="description" minlength="3"
+                  maxlength="120"></textarea>
+               <label for="description">
+                  Descrição
+               </label>
+               <span class="error"></span>
+            </div>
             <button class="form__button--login button--blue" data-send="create">Cadastrar</button>
          </form>
       </section>
@@ -73,18 +77,19 @@
             </ul>
          </div>
 
-         <form class="form">
+         <form class="form" data-form="contact">
             <h3 class="form__title">Fale conosco</h3>
-            <label for="name" class="form__group">
-               Nome
-               <input minlength="3" maxlength="20" required data-input="" id="name" name="name" type="text">
-            </label>
-            <span class="error"></span>
-            <label for="mensage" class="form__group__textarea form__group">
-               Mensagem
-               <textarea required id="mensage" name="mensage" type="text"></textarea>
-            </label>
-            <span class="error"></span>
+            <div class="form__group">
+               <input id="name" name="name" type="text" class="form__group--input" required data-name minlength="3">
+               <label for="name" class="form__group--label">Nome</label>
+               <span class="error"></span>
+            </div>
+            <div class="form__group form__group__textarea" data-group-input>
+               <textarea id="mensage" name="message" type="text" required data-message minlength="3"
+                  maxlength="120"></textarea>
+               <label for="message" class="form__group--label--textarea">Mensagem</label>
+               <span class="error"></span>
+            </div>
             <button class="form__button button--blue" data-send="message">Enviar mensagem</button>
          </form>
       </section>

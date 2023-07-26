@@ -4,7 +4,7 @@
    margin: 0 auto;
    width: 28rem;
    gap: 0.5rem;
-   /* position: absolute; */
+   position: relative;
 }
 
 @media screen and (max-width: 1080px) {

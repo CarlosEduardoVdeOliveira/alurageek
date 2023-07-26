@@ -27,7 +27,7 @@
             <i class="fa-solid fa-magnifying-glass" style="color: #A2A2A2;"></i>
          </button>
       </div>
-      <a href="./pages/login.html" class="button button--transparent" data-login>Login</a>
+      <a href="./login.html" class="button button--transparent" data-login>Login</a>
    </header>
    <main>
       <section class="products">
@@ -73,19 +73,19 @@
             </ul>
          </div>
 
-         <form class="form">
+         <form class="form" data-form="contact">
             <h3 class="form__title">Fale conosco</h3>
-            <label for="name" class="form__group">
-               Nome
-               <input required minlength="3" maxlength="20" id="name" name="name" type="text" data-name>
-            </label>
-            <span class="error"></span>
-            <label for="mensage" class="form__group__textarea form__group">
-               Mensagem
-               <textarea required minlength="3" maxlength="120" id="mensage" name="mensage" type="text"
-                  data-message></textarea>
-            </label>
-            <span class="error"></span>
+            <div class="form__group">
+               <input id="name" name="name" type="text" class="form__group--input" required data-name minlength="3">
+               <label for="name" class="form__group--label">Nome</label>
+               <span class="error"></span>
+            </div>
+            <div class="form__group form__group__textarea" data-group-input>
+               <textarea id="mensage" name="message" type="text" required data-message minlength="3"
+                  maxlength="120"></textarea>
+               <label for="message" class="form__group--label--textarea">Mensagem</label>
+               <span class="error"></span>
+            </div>
             <button class="form__button button--blue" data-send="message">Enviar mensagem</button>
          </form>
       </section>

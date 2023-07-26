@@ -6,6 +6,8 @@
 @import url("./form/form-group.css");
 @import url("./form/form-group-links.css");
 @import url("./form/form-group-textarea.css");
+@import url("./form/form-group-input.css");
+@import url("./form/form-group-label.css");
 @import url("./form/form-button.css");
 
 .form__container {

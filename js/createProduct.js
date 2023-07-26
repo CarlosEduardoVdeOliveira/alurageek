@@ -10,7 +10,7 @@ async function create(event) {
     if (!email || !password) {
       throw new Error("É preciso estar logado para cadastrar outro produto!");
     }
-    const name = document.querySelector("[data-input='name']").value;
+    const name = document.querySelector("[data-input='name-product']").value;
     const category = document.querySelector("[data-input='category']").value;
     const imageURL = document.querySelector("[data-input='imageURL']").value;
     const description = document.querySelector(
