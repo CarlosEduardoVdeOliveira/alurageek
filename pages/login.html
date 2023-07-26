@@ -20,7 +20,8 @@
       <a href="../index.html">
          <img class="header__logo" src="../assets/Logo.svg" alt="logo da AluraGeek">
       </a>
-      <input class="header__search header__search--login" type="search" placeholder="O que deseja encontrar?" />
+      <input minlength="3" maxlength="20" class="header__search header__search--login" type="search"
+         placeholder="O que deseja encontrar?" />
       <button class="button button--transparent button__page--login" data-login>Login</button>
       <button class="button--lupa">
          <img src="../assets/Icone_search.svg" class="header__search--lupa" alt="">
@@ -32,15 +33,15 @@
             <h2 class="form__login__title">Iniciar Sessão</h2>
             <label for="email" class="form__group form__group--login">
                Email
-               <input id="email" name="email" type="email" data-email>
+               <input required minlength="6" maxlength="20" id="email" name="email" type="email" data-email>
+               <span class="error"></span>
             </label>
-            <span class="error" data-erro="formInputEmail">O campo precisa ter no minimo 6 caracteres</span>
             <label for="password" class="form__group form__group--login">
                Senha
-               <input id="password" name="password" type="password" data-password>
+               <input required minlength="6" maxlength="20" id="password" name="password" type="password" data-password>
+               <span class="error"></span>
             </label>
-            <span class="error" data-erro="formInputPassword">O campo precisa ter no minimo 6 caracteres</span>
-            <button class="form__button--login button--blue">Entrar</button>
+            <button class="form__button--login button--blue" data-send="login">Entrar</button>
          </form>
       </section>
       <section class="form__container">
@@ -63,15 +64,16 @@
             <h3 class="form__title">Fale conosco</h3>
             <label for="name" class="form__group">
                Nome
-               <input id="name" name="name" type="text" data-name>
+               <input required minlength="3" maxlength="20" id="name" name="name" type="text" data-name>
             </label>
             <span class="error"></span>
             <label for="mensage" class="form__group__textarea form__group">
                Mensagem
-               <textarea id="mensage" name="mensage" type="text" data-message></textarea>
+               <textarea required minlength="3" maxlength="120" id="mensage" name="mensage" type="text"
+                  data-message></textarea>
             </label>
             <span class="error"></span>
-            <button class="form__button button--blue" data-send>Enviar mensagem</button>
+            <button class="form__button button--blue" data-send="message">Enviar mensagem</button>
          </form>
       </section>
    </main>
@@ -94,6 +96,7 @@
    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
    <script src="../js/sessionStorage.js"></script>
    <script src="../js/verifySession.js" type="module"></script>
+   <script src="../js/validateForm.js"></script>
 </body>
 
 </html>

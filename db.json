@@ -9,19 +9,27 @@
       "id": 3
     },
     {
-      "name": "DBZ BudoKai 3",
-      "description": "Dragon Ball Z: Budokai Tenkaichi é uma série de jogos de luta desenvolvida pela Spike baseada na série de mangá Dragon Ball de Akira Toriyama. A série foi publicada pela Namco Bandai Games sob a marca Bandai no Japão e na Europa, e como Atari na América do Norte e Austrália de 2005 a 2007.",
-      "imageURL": "https://m.media-amazon.com/images/I/51VqM3veC5L._AC_UF1000,1000_QL80_.jpg",
-      "price": "100,00",
-      "category": "Jogos",
+      "name": "Guerreiro alado",
+      "description": "teste",
+      "imageURL": "https://images.unsplash.com/photo-1529981188441-8a2e6fe30103?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "price": "20,90",
+      "category": "Filmes",
       "id": 5
     },
     {
-      "name": "Gabinete gamer com lateral em acrílico e LED frontal;",
-      "description": "\n\nGabinete gamer de alto nível, contendo um belo design com detalhes em LED, garantindo uma bela aparência para a sua máquina.\n",
-      "imageURL": "https://api.dooca.store/files/4901/files/1-6.png",
-      "price": "659,29",
-      "category": "Informática",
+      "name": "TEST",
+      "description": "dfsdfsdfsdfsd dsf dsf ds sad asd as",
+      "imageURL": "https://images.unsplash.com/photo-1529981188441-8a2e6fe30103?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "price": "6,00",
+      "category": "testes",
+      "id": 6
+    },
+    {
+      "name": "Guerreiro",
+      "description": "dfsdfsfsf",
+      "imageURL": "https://images.unsplash.com/photo-1529981188441-8a2e6fe30103?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "price": "6,00",
+      "category": "Diversos",
       "id": 7
     }
   ]

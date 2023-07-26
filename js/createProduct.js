@@ -18,11 +18,11 @@ async function create(event) {
     ).value;
     const price = document.querySelector("[data-input='price']").value;
     await data.createProduct(
-      name,
-      description,
-      imageURL,
-      formatPrice(price),
-      category
+      name.trim(),
+      description.trim(),
+      imageURL.trim(),
+      formatPrice(price).trim(),
+      category.trim()
     );
 
     Toastify({

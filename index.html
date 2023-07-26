@@ -22,11 +22,13 @@
       <a href="index.html">
          <img class="header__logo" src="./assets/Logo.svg" alt="logo da AluraGeek">
       </a>
-      <input class="header__search" type="search" placeholder="O que deseja encontrar?" />
+      <div class="header__search__group">
+         <input data-search="input" class="header__search--input" type="text" placeholder="O que deseja encontrar?" />
+         <button class="header__search--button" data-search="button">
+            <i class="fa-solid fa-magnifying-glass" style="color: #A2A2A2;"></i>
+         </button>
+      </div>
       <a href="./pages/login.html" class="button button--transparent" data-login>Login</a>
-      <button class="button--lupa">
-         <img src="./assets/Icone_search.svg" class="header__search--lupa" alt="">
-      </button>
    </header>
    <main>
       <section class="carrosel">
@@ -56,18 +58,19 @@
             <h3 class="form__title">Fale conosco</h3>
             <div class="form__group">
                <label for="name" class="labelInputName">Nome</label>
-               <input id="name" name="name" type="text" class="inputName" required data-name minlength="3">
+               <input id="name" name="name" type="text" class="inputName" required data-name minlength="3"
+                  maxlength="20">
+               <span class="error"></span>
             </div>
-            <span class="error"></span>
-            <div class="form__group form__group__textarea">
+            <div class="form__group form__group__textarea" data-group-input>
                <label for="mensage">
                   Mensagem
                </label>
-               <textarea id="mensage" name="mensage" type="text" required data-message minlength="3"
-                  maxlength="500"></textarea>
+               <textarea id="mensage" name="message" type="text" required data-message minlength="3"
+                  maxlength="120"></textarea>
+               <span class="error"></span>
             </div>
-            <span class="error"></span>
-            <button class="form__button button--blue" data-send>Enviar mensagem</button>
+            <button class="form__button button--blue" data-send="message">Enviar mensagem</button>
          </form>
       </section>
    </main>
@@ -89,8 +92,9 @@
    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
    <script src="./js/listCategory.js" type="module"></script>
    <script src="./js/verifySession.js" type="module"></script>
+   <script src="./js/validateForm.js" type="module"></script>
+   <script src="./js/search.js" type="module"></script>
    <!--  
-      <script src="./js/validateForm.js" type="module"></script>
       <script src="./js/server.js" type="module"></script>
       
    

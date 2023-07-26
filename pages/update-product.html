@@ -19,8 +19,8 @@
       <a href="../index.html">
          <img class="header__logo" src="../assets/Logo.svg" alt="logo da AluraGeek">
       </a>
-      <input data-input="search" class="header__search header__search--login" type="search"
-         placeholder="O que deseja encontrar?" />
+      <input required minlength="3" maxlength="20" data-input="search" class="header__search header__search--login"
+         type="search" placeholder="O que deseja encontrar?" />
       <button class="button button--transparent" data-logoff>Sair</button>
       <button class="button--lupa">
          <img src="../assets/Icone_search.svg" class="header__search--lupa" alt="">
@@ -32,29 +32,32 @@
             <h2 class="form__login__title">Adicionar novo produto</h2>
             <label for="url" class="form__group form__group--login">
                URL da imagem
-               <input data-input="url" id="url" name="url" type="text">
+               <input required minlength="10" data-input="url" id="url" name="url" type="text">
             </label>
             <span class="error"></span>
             <label for="category" class="form__group form__group--login">
                Categoria
-               <input data-input="category" id="category" name="category" type="text">
+               <input required minlength="3" maxlength="20" data-input="category" id="category" name="category"
+                  type="text">
             </label>
             <label for="name-product" class="form__group form__group--login">
                Nome do produto
-               <input data-input="name" id="name-product" name="name-product" type="text">
+               <input required minlength="3" maxlength="20" data-input="name" id="name-product" name="name-product"
+                  type="text">
             </label>
             <span class="error"></span>
             <label for="price" class="form__group form__group--login">
                Preço do produto
-               <input data-input="price" id="price" name="price" type="text">
+               <input required minlength="3" maxlength="20" data-input="price" id="price" name="price" type="text">
             </label>
             <span class="error"></span>
             <label for="description" class="form__group__textarea form__group form__group--login">
                Descrição do produto
-               <textarea id="description" name="description" type="text" data-input="description"></textarea>
+               <textarea required minlength="3" maxlength="120" id="description" name="description" type="text"
+                  data-input="description"></textarea>
             </label>
             <span class="error"></span>
-            <button class="form__button--login button--blue" data-update>Atualizar</button>
+            <button class="form__button--login button--blue" data-send="update">Atualizar</button>
          </form>
       </section>
       <section class="form__container">
@@ -76,15 +79,15 @@
             <h3 class="form__title">Fale conosco</h3>
             <label for="name" class="form__group">
                Nome
-               <input data-input="" id="name" name="name" type="text">
+               <input required minlength="3" maxlength="20" data-input="" id="name" name="name" type="text">
             </label>
             <span class="error"></span>
             <label for="mensage" class="form__group__textarea form__group">
                Mensagem
-               <textarea id="mensage" name="mensage" type="text"></textarea>
+               <textarea required minlength="3" maxlength="120" id="mensage" name="message" type="text"></textarea>
             </label>
             <span class="error"></span>
-            <button class="form__button button--blue">Enviar mensagem</button>
+            <button class="form__button button--blue" data-send="message">Enviar mensagem</button>
          </form>
       </section>
    </main>
@@ -109,6 +112,7 @@
 
    <script src="../js/destroySession.js"></script>
    <script src="../js/utils/format.js"></script>
+   <script src="../js/validateForm.js"></script>
 </body>
 
 </html>

@@ -1,38 +1,52 @@
 import { data } from "./server.js";
 import { formatPrice } from "./utils/format.js";
 
-const update = document.querySelector("[data-update-form]");
+const updateForm = document.querySelector("[data-update-form]");
+const name = document.querySelector("[data-input='name']");
+const image = document.querySelector("[data-input='url']");
+const price = document.querySelector("[data-input='price']");
+const category = document.querySelector("[data-input='category']");
+const description = document.querySelector("[data-input='description']");
 
-async function updatedItem(event) {
+async function loadProductValues() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const id = urlParams.get("q");
+
+  const product = await data.listProduct(id);
+
+  name.value = product.name;
+  image.value = product.imageURL;
+  price.value = product.price;
+  category.value = product.category;
+  description.value = product.description;
+}
+
+loadProductValues();
+
+async function updatedProduct(event) {
   event.preventDefault();
   try {
     const email = sessionStorage.getItem("email");
     const password = sessionStorage.getItem("password");
+
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get("q");
 
-    const name = document.querySelector("[data-input='name']").value;
-    const image = document.querySelector("[data-input='url']").value;
-    const price = document.querySelector("[data-input='price']").value;
-    const category = document.querySelector("[data-input='category']").value;
-    const description = document.querySelector(
-      "[data-input='description']"
-    ).value;
     const product = {
       id,
-      name: name,
-      description: description,
-      imageURL: image,
-      price: formatPrice(price),
-      category: category,
+      name: name.value,
+      description: description.value,
+      imageURL: image.value,
+      price: formatPrice(price.value),
+      category: category.value,
     };
     await data.updateProduct(
       product.id,
-      product.name,
-      product.description,
-      product.imageURL,
-      product.price,
-      product.category
+      product.name.trim(),
+      product.description.trim(),
+      product.imageURL.trim(),
+      product.price.trim(),
+      product.category.trim()
     );
     Toastify({
       text: "Produto atualizado com sucesso!",
@@ -60,4 +74,4 @@ async function updatedItem(event) {
     }).showToast();
   }
 }
-update.addEventListener("submit", (event) => updatedItem(event));
+updateForm.addEventListener("submit", (event) => updatedProduct(event));

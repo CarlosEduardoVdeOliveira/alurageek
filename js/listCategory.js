@@ -16,23 +16,35 @@ async function filterCategory(categories) {
 }
 
 async function productsInCategory() {
-  const categoryElement = document.querySelectorAll("[data-category]");
-  const products = await data.listAllProducts();
+  try {
+    const categoryElement = document.querySelectorAll("[data-category]");
+    const products = await data.listAllProducts();
 
-  categoryElement.forEach((element) => {
-    products.forEach((item) => {
-      const category = element.dataset.category;
-      if (item.category === category) {
-        element.innerHTML += template.templateLoggedOff(
-          item.id,
-          item.name,
-          item.price,
-          item.imageURL,
-          item.description
-        );
-      }
+    categoryElement.forEach((element) => {
+      products.forEach((item) => {
+        const category = element.dataset.category;
+        if (item.category === category) {
+          element.innerHTML += template.templateLoggedOff(
+            item.id,
+            item.name,
+            item.price,
+            item.imageURL,
+            item.description
+          );
+        }
+      });
     });
-  });
+  } catch (error) {
+    Toastify({
+      text: error.message,
+      duration: 3000,
+      close: true,
+      style: {
+        background: "#eb4545",
+        color: "#F5F5F5",
+      },
+    }).showToast();
+  }
 }
 
 async function createElementsCategories(list) {
@@ -40,6 +52,9 @@ async function createElementsCategories(list) {
     productListElement.innerHTML += template.templateCategories(item);
   });
   productsInCategory();
+  if (list.length === 0) {
+    productListElement.innerHTML += `<h2>Não foi possível carregar os dados!</h2>`;
+  }
 }
 await filterCategory(categoryList);
 createElementsCategories(categoryList);

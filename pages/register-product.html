@@ -19,8 +19,8 @@
       <a href="../index.html">
          <img class="header__logo" src="../assets/Logo.svg" alt="logo da AluraGeek">
       </a>
-      <input required data-input="search" class="header__search header__search--login" type="search"
-         placeholder="O que deseja encontrar?" />
+      <input minlength="3" maxlength="20" required data-input="search" class="header__search header__search--login"
+         type="search" placeholder="O que deseja encontrar?" />
       <button class="button button--transparent" data-logoff>Sair</button>
       <button class="button--lupa">
          <img src="../assets/Icone_search.svg" class="header__search--lupa" alt="">
@@ -32,29 +32,33 @@
             <h2 class="form__login__title">Adicionar novo produto</h2>
             <label for="url" class="form__group form__group--login">
                URL da imagem
-               <input required data-input="imageURL" id="url" name="url" type="text">
+               <input minlength="10" required data-input="imageURL" id="url" name="url" type="text">
             </label>
             <span class="error"></span>
             <label for="category" class="form__group form__group--login">
                Categoria
-               <input required data-input="category" id="category" name="category" type="text">
+               <input minlength="3" maxlength="20" required data-input="category" id="category" name="category"
+                  type="text">
             </label>
             <label for="name-product" class="form__group form__group--login">
                Nome do produto
-               <input required data-input="name" id="name-product" name="name-product" type="text">
+               <input minlength="3" maxlength="20" required data-input="name" id="name-product" name="name-product"
+                  type="text">
             </label>
             <span class="error"></span>
             <label for="price" class="form__group form__group--login">
                Preço do produto
-               <input required data-input="price" id="price" name="price" type="text">
+               <input minlength="3" required data-input="price" pattern="^\d+(\,\d{2})?$" id="price" name="price"
+                  type="text">
             </label>
             <span class="error"></span>
             <label for="description" class="form__group__textarea form__group form__group--login">
                Descrição do produto
-               <textarea required id="description" name="description" type="text" data-input="description"></textarea>
+               <textarea minlength="3" maxlength="120" required id="description" name="description" type="text"
+                  data-input="description"></textarea>
             </label>
             <span class="error"></span>
-            <button class="form__button--login button--blue" data-create>Cadastrar</button>
+            <button class="form__button--login button--blue" data-send="create">Cadastrar</button>
          </form>
       </section>
       <section class="form__container">
@@ -76,7 +80,7 @@
             <h3 class="form__title">Fale conosco</h3>
             <label for="name" class="form__group">
                Nome
-               <input required data-input="" id="name" name="name" type="text">
+               <input minlength="3" maxlength="20" required data-input="" id="name" name="name" type="text">
             </label>
             <span class="error"></span>
             <label for="mensage" class="form__group__textarea form__group">
@@ -84,7 +88,7 @@
                <textarea required id="mensage" name="mensage" type="text"></textarea>
             </label>
             <span class="error"></span>
-            <button class="form__button button--blue">Enviar mensagem</button>
+            <button class="form__button button--blue" data-send="message">Enviar mensagem</button>
          </form>
       </section>
    </main>
@@ -108,6 +112,7 @@
    <script src="../js/createProduct.js" type="module"></script>
    <script src="../js/destroySession.js"></script>
    <script src="../js/utils/format.js"></script>
+   <script src="../js/validateForm.js"></script>
 
 </body>
 

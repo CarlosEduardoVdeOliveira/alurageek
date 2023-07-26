@@ -1,10 +1,13 @@
 const baseURL = "http://localhost:3000/products";
-const baseURLDeploy = "https://64b52385f3dbab5a95c6c6ad.mockapi.io/products";
+//const baseURL = "https://64b52385f3dbab5a95c6c6ad.mockapi.io/products";
 
 async function listAllProducts() {
   try {
     const connection = await fetch(baseURL);
     const getProducts = await connection.json();
+    if (!connection.ok) {
+      throw new Error("Não foi possível listar os produtos!");
+    }
     return getProducts;
   } catch (error) {
     console.log(error);
@@ -14,6 +17,9 @@ async function listProduct(id) {
   try {
     const connection = await fetch(`${baseURL}/${id}`);
     const getProduct = await connection.json();
+    if (!connection.ok) {
+      throw new Error("Não foi possível listar o produto!");
+    }
     return getProduct;
   } catch (error) {
     console.log(error);
@@ -35,10 +41,10 @@ async function createProduct(name, description, imageURL, price, category) {
     }),
   });
   try {
+    const create = await connection.json();
     if (!connection.ok) {
       throw new Error("Não foi possível cadastrar o novo produto!");
     }
-    const create = await connection.json();
     return create;
   } catch (error) {
     console.log(error);
@@ -82,7 +88,7 @@ async function deleteProduct(id) {
       return { success: true };
     }
   } catch {
-    throw new Error("Erro ao excluir o produto.");
+    throw new Error("Erro ao tentar excluir o produto.");
   }
 }
 
@@ -90,7 +96,20 @@ async function listProductsPerCategories(category) {
   try {
     const connection = await fetch(`${baseURL}?category=${category}`);
     const getCategory = await connection.json();
+    if (!connection.ok) {
+      throw new Error("Não foi possível conectar a api!");
+    }
     return getCategory;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function search(termSearch) {
+  try {
+    const connection = await fetch(`${baseURL}?q=${termSearch}`);
+    const searchResult = await connection.json();
+    return searchResult;
   } catch (error) {
     console.log(error);
   }
@@ -103,4 +122,5 @@ export const data = {
   updateProduct,
   deleteProduct,
   listProductsPerCategories,
+  search,
 };

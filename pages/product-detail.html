@@ -23,7 +23,7 @@
       <a href="../index.html">
          <img class="header__logo" src="../assets/Logo.svg" alt="logo da AluraGeek">
       </a>
-      <input class="header__search" type="search" placeholder="O que deseja encontrar?" />
+      <input minlength="3" maxlength="20" class="header__search" type="search" placeholder="O que deseja encontrar?" />
       <a class="button button--transparent" href="./login.html" data-login>Login</a>
       <button class="button--lupa">
          <img src="../assets/Icone_search.svg" class="header__search--lupa" alt="">
@@ -77,15 +77,16 @@
             <h3 class="form__title">Fale conosco</h3>
             <label for="name" class="form__group">
                Nome
-               <input id="name" name="name" type="text" data-name>
+               <input required minlength="3" maxlength="20" id="name" name="name" type="text" data-name>
             </label>
             <span class="error"></span>
             <label for="mensage" class="form__group__textarea form__group">
                Mensagem
-               <textarea id="mensage" name="mensage" type="text" data-message></textarea>
+               <textarea required minlength="3" maxlength="120" id="mensage" name="mensage" type="text"
+                  data-message></textarea>
             </label>
             <span class="error"></span>
-            <button class="form__button button--blue" data-send>Enviar mensagem</button>
+            <button class="form__button button--blue" data-send="message">Enviar mensagem</button>
          </form>
       </section>
    </main>
@@ -106,6 +107,9 @@
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
    <script src="../js/listProduct.js" type="module"></script>
+   <script src="../js/validateForm.js"></script>
+   <script src="../js/search.js"></script>
+
    <!-- <script src="../js/script.js" type="module"></script> -->
 </body>
 

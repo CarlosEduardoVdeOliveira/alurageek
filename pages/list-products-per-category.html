@@ -58,15 +58,15 @@
             <h3 class="form__title">Fale conosco</h3>
             <label for="name" class="form__group">
                Nome
-               <input id="name" name="name" type="text" data-name>
+               <input required id="name" name="name" type="text" data-name>
             </label>
             <span class="error"></span>
             <label for="mensage" class="form__group__textarea form__group">
                Mensagem
-               <textarea id="mensage" name="mensage" type="text" data-message></textarea>
+               <textarea required id="mensage" name="mensage" type="text" data-message></textarea>
             </label>
             <span class="error"></span>
-            <button class="form__button button--blue" data-send>Enviar mensagem</button>
+            <button class="form__button button--blue" data-send="message">Enviar mensagem</button>
          </form>
       </section>
    </main>
@@ -89,6 +89,9 @@
    <script src="../js/listProductsPerCategory.js" type="module"></script>
    <script src="../js/verifySession.js" type="module"></script>
    <script src="../js/destroySession.js"></script>
+   <script src="../js/validateForm.js"></script>
+   <script src="../js/search.js"></script>
+
 </body>
 
 </html>

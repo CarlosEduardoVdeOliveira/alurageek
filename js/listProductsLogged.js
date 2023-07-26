@@ -6,7 +6,7 @@ export async function createListProducts() {
     const email = sessionStorage.getItem("email");
     const password = sessionStorage.getItem("password");
     const products = await data.listAllProducts();
-    const list = document.querySelector("[data-list]");
+    const list = document.querySelector("[data-products]");
     let html = "";
     if (!email || !password) {
       throw new Error("Erro: É preciso estar logado!");
