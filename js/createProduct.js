@@ -1,6 +1,7 @@
 import { data } from "./server.js";
 import { formatPrice } from "./utils/format.js";
 const formCreate = document.querySelector("[data-create-form]");
+
 async function create(event) {
   event.preventDefault();
 
@@ -12,7 +13,7 @@ async function create(event) {
     }
     const name = document.querySelector("[data-input='nameProduct']").value;
     const category = document.querySelector("[data-input='category']").value;
-    const imageURL = document.querySelector("[data-input='imageURL']").value;
+    const imageURL = document.querySelector("[data-input='url']").value;
     const description = document.querySelector(
       "[data-input='description']"
     ).value;
