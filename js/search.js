@@ -26,15 +26,29 @@ async function search(event) {
     if (searchTerm.length === 0) {
       list.innerHTML = `<h2>Produto não encontrado!</h2>`;
     }
-    searchTerm.forEach((product) => {
-      list.innerHTML += template.templateLoggedOff(
-        product.id,
-        product.name,
-        product.price,
-        product.imageURL,
-        product.description
-      );
-    });
+    const email = sessionStorage.getItem("email");
+    const password = sessionStorage.getItem("password");
+    if (!email && !password) {
+      searchTerm.forEach((product) => {
+        list.innerHTML += template.templateLoggedOff(
+          product.id,
+          product.name,
+          product.price,
+          product.imageURL,
+          product.description
+        );
+      });
+    } else {
+      searchTerm.forEach((product) => {
+        list.innerHTML += template.templateLoggedIn(
+          product.id,
+          product.imageURL,
+          product.name,
+          product.price,
+          product.description
+        );
+      });
+    }
   }
 }
 buttonSearch.addEventListener("click", (event) => search(event));

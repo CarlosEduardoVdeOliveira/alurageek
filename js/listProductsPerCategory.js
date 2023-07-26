@@ -5,7 +5,7 @@ export async function listPerCategory() {
     const categoryTitle = document.querySelector(
       "[data-percategory='category']"
     );
-    const list = document.querySelector("[data-percategory='products']");
+    const list = document.querySelector("[data-products]");
     const urlParams = new URLSearchParams(window.location.search);
     const categoryParam = urlParams.get("q");
 

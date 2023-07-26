@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
    <meta charset="UTF-8">
@@ -20,16 +20,6 @@
       <a href="../index.html">
          <img class="header__logo--login" src="../assets/Logo.svg" alt="logo da AluraGeek">
       </a>
-      <!--  
-      <div class="header__search__group">
-            <input data-search="input" class="header__search--input" type="text" 
-         placeholder="O que deseja encontrar?" /> 
-         <button class="header__search--button" data-search="button">
-            <i class="fa-solid fa-magnifying-glass" style="color: #A2A2A2;"></i>
-         </button>
-      </div>
-      <a href="../index.html" class="button button--transparent">Inicio</a>
-   -->
    </header>
    <main>
       <section class="form__container--login">
@@ -37,12 +27,12 @@
             <h2 class="form__login__title">Iniciar Sessão</h2>
             <label for="email" class="form__group form__group--login">
                Email
-               <input required minlength="6" maxlength="20" id="email" name="email" type="email" data-email>
+               <input required minlength="6" id="email" name="email" type="email" data-email>
                <span class="error"></span>
             </label>
             <label for="password" class="form__group form__group--login">
                Senha
-               <input required minlength="6" maxlength="20" id="password" name="password" type="password" data-password>
+               <input required minlength="6" id="password" name="password" type="password" data-password>
                <span class="error"></span>
             </label>
             <button class="form__button--login button--blue" data-send="login">Entrar</button>

@@ -8,28 +8,28 @@
    padding: 0.5rem 1rem;
    font-size: 1.5rem;
    border-radius: 1.25rem 0 0 1.25rem;
-   outline: 0;
    border: solid 1px var(--gray-200);
 }
 
 .header__search--button {
    background-color: transparent;
+   color: var(--gray-200);
    border: 1px solid var(--gray-200);
    border-left: 0;
    font-size: 1.5rem;
    padding: .5rem 1rem;
    border-radius: 0rem 1.25rem 1.25rem 0rem;
+   transition: all .2s ease-in-out;
+}
+
+.header__search--button:hover {
+   border: 1px solid var(--blue-400);
+   color: var(--blue-400);
 }
 
 .header__search--input:focus {
-   outline: solid 1px var(--gray-200);
+   outline: solid 1px var(--blue-400);
 }
-
-/* .button--lupa {
-   border: none;
-   background-color: transparent;
-} */
-
 
 .header__search--input::placeholder {
    color: var(--gray-200);
