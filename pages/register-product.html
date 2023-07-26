@@ -28,38 +28,39 @@
          <form class="form__login" data-create-form>
             <h2 class="form__login__title">Adicionar novo produto</h2>
             <div class="form__group">
-               <input id="url" name="url" type="text" class="form__group--input" required data-input="url"
-                  minlength="10">
-               <label for="url" class="form__group--label">URL da imagem</label>
-               <span class="error"></span>
-            </div>
-            <div class="form__group">
-               <input id="category" name="category" type="text" class="form__group--input" required
-                  data-input="category" minlength="3" maxlength="20">
-               <label for="category" class="form__group--label">Categoria</label>
-               <span class="error"></span>
-            </div>
-            <div class="form__group">
-               <input id="name" name="name" type="text" class="form__group--input" required data-input="name-product"
-                  minlength="3" maxlength="20">
-               <label for="name" class="form__group--label">Nome do produto</label>
-               <span class="error"></span>
-            </div>
-            <div class="form__group">
-               <input id="price" name="price" type="text" class="form__group--input" required data-input="price"
-                  minlength="3">
-               <label for="price" class="form__group--label">Preço do produto</label>
-               <span class="error"></span>
-            </div>
-            <div class="form__group form__group__textarea" data-group-input>
-               <textarea id="description" name="description" type="text" required data-input="description" minlength="3"
-                  maxlength="120"></textarea>
-               <label for="description">
-                  Descrição
-               </label>
-               <span class="error"></span>
-            </div>
-            <button class="form__button--login button--blue" data-send="create">Cadastrar</button>
+               <div class="form__group">
+                  <input id="url" name="url" type="text" class="form__group--input" required data-input="url"
+                     minlength="10">
+                  <label for="url" class="form__group--label">URL da imagem</label>
+                  <span class="error"></span>
+               </div>
+               <div class="form__group">
+                  <input id="category" name="category" type="text" class="form__group--input" required
+                     data-input="category" minlength="3" maxlength="20">
+                  <label for="category" class="form__group--label">Categoria</label>
+                  <span class="error"></span>
+               </div>
+               <div class="form__group">
+                  <input id="name" name="name" type="text" class="form__group--input" required data-input="nameProduct"
+                     minlength="3" maxlength="20">
+                  <label for="name" class="form__group--label">Nome do produto</label>
+                  <span class="error"></span>
+               </div>
+               <div class="form__group">
+                  <input id="price" name="price" type="text" class="form__group--input" required data-input="price"
+                     minlength="3">
+                  <label for="price" class="form__group--label">Preço do produto</label>
+                  <span class="error"></span>
+               </div>
+               <div class="form__group form__group__textarea" data-group-input>
+                  <textarea id="description" class="form__group--textarea" name="description" type="text" required
+                     data-input="description" minlength="3" maxlength="120"></textarea>
+                  <label for="description" class="form__group--label--textarea">
+                     Descrição
+                  </label>
+                  <span class="error"></span>
+               </div>
+               <button class="form__button--login button--blue" data-send="create">Cadastrar</button>
          </form>
       </section>
       <section class="form__container">
@@ -85,8 +86,8 @@
                <span class="error"></span>
             </div>
             <div class="form__group form__group__textarea" data-group-input>
-               <textarea id="mensage" name="message" type="text" required data-message minlength="3"
-                  maxlength="120"></textarea>
+               <textarea id="mensage" name="message" class="form__group--textarea" type="text" required data-message
+                  minlength="3" maxlength="120"></textarea>
                <label for="message" class="form__group--label--textarea">Mensagem</label>
                <span class="error"></span>
             </div>
@@ -112,9 +113,9 @@
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
    <script src="../js/createProduct.js" type="module"></script>
-   <script src="../js/destroySession.js"></script>
-   <script src="../js/utils/format.js"></script>
-   <script src="../js/validateForm.js"></script>
+   <script src="../js/destroySession.js" type="module"></script>
+   <script src="../js/utils/format.js" type="module"></script>
+   <script src="../js/validateForm.js" type="module"></script>
 
 </body>
 

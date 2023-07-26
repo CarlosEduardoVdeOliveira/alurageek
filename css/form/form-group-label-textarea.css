@@ -1,0 +1,15 @@
+.form__group--label--textarea {
+  top: .75rem;
+  left: 0.75rem;
+  color: var(--gray-300);
+  cursor: text;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+}
+
+.form__group--textarea:focus~.form__group--label--textarea,
+.form__group--textarea:valid~.form__group--label--textarea {
+  top: 0;
+  font-size: .75rem;
+  color: var(--blue-500)
+}
