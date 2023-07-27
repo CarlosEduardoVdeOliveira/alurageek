@@ -55,8 +55,8 @@ function templateLoggedIn(id, image, name, price, description) {
           alt="${description}">
       <span class="product__title">${name}</span>
       <p class="product__price">R$ ${price}</p>
-      <a class="product__link" href="../pages/product-detail.html?q=${id}"
-        data-view='product' id=${id}>Ver produto</a>
+      <span class="product__title"
+        data-view='product' id=${id}># ${id}</span>
     </li>
   `;
   return template;

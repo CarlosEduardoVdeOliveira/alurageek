@@ -1,5 +1,5 @@
-const baseURL = "http://localhost:3000/products";
-//const baseURL = "https://64b52385f3dbab5a95c6c6ad.mockapi.io/products";
+// const baseURL = "http://localhost:3000/products";
+const baseURL = "https://64b52385f3dbab5a95c6c6ad.mockapi.io/products";
 
 async function listAllProducts() {
   try {
@@ -14,16 +14,12 @@ async function listAllProducts() {
   }
 }
 async function listProduct(id) {
-  try {
-    const connection = await fetch(`${baseURL}/${id}`);
-    const getProduct = await connection.json();
-    if (!connection.ok) {
-      throw new Error("Não foi possível listar o produto!");
-    }
-    return getProduct;
-  } catch (error) {
-    console.log(error);
+  const connection = await fetch(`${baseURL}/${id}`);
+  const getProduct = await connection.json();
+  if (!connection.ok) {
+    throw new Error("Não foi possível listar o produto!");
   }
+  return getProduct;
 }
 
 async function createProduct(name, description, imageURL, price, category) {
