@@ -3,3 +3,11 @@
    flex-direction: column;
    gap: .5rem;
 }
+
+@media screen and (max-width: 830px) {}
+
+@media screen and (max-width:660px) {
+   .wrapper__details {
+      padding: 1rem;
+   }
+}

@@ -1,4 +1,16 @@
 .details__description {
    font-size: 1rem;
    font-weight: 400;
+
+}
+
+@media screen and (max-width: 830px) {}
+
+@media screen and (max-width: 660px) {
+   .details__description {
+      font-size: 0.875rem;
+
+   }
+
+
 }

@@ -2,3 +2,13 @@
    font-size: 1rem;
    font-weight: 700;
 }
+
+@media screen and (max-width: 830px) {}
+
+@media screen and (max-width: 660px) {
+   .details__title {
+      font-size: 1rem;
+   }
+
+
+}
