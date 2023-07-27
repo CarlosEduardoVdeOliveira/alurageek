@@ -11,7 +11,8 @@ formLogin.addEventListener("submit", (event) => {
     password.value.length >= 6 &&
     password.value !== ""
   ) {
-    window.location.href = "./alurageek/pages/home-logged.html";
+    window.location.href =
+      "https://carloseduardovdeoliveira.github.io/alurageek/pages/home-logged.html";
     sessionStorage.setItem("email", email.value);
     sessionStorage.setItem("password", password.value);
   } else {
