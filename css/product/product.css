@@ -9,11 +9,11 @@
    gap: 0.5rem;
 }
 
-.product:last-child {
+.product:nth-child(n) {
    margin-right: auto;
 }
 
-.product:first-child {
+.product:nth-child(n) {
    margin-left: 0;
 }
 
