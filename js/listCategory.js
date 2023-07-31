@@ -53,7 +53,7 @@ async function createElementsCategories(list) {
   });
   productsInCategory();
   if (list.length === 0) {
-    productListElement.innerHTML += `<h2>Não foi possível carregar os dados!</h2>`;
+    productListElement.innerHTML += `<h2>Não há produtos disponíveis!</h2>`;
   }
 }
 await filterCategory(categoryList);

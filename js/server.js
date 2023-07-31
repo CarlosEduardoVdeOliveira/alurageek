@@ -1,5 +1,5 @@
 // const baseURL = "http://localhost:3000/products";
-const baseURL = "https://64b52385f3dbab5a95c6c6ad.mockapi.io/products";
+const baseURL = "https://64c7a82fa1fe0128fbd51998.mockapi.io/api/v1/products";
 
 async function listAllProducts() {
   try {
@@ -102,8 +102,11 @@ async function listProductsPerCategories(category) {
 }
 
 async function search(termSearch) {
+  const url = new URL(baseURL);
+  url.searchParams.append("name", termSearch);
+
   try {
-    const connection = await fetch(`${baseURL}?q=${termSearch}`);
+    const connection = await fetch(url.toString());
     const searchResult = await connection.json();
     return searchResult;
   } catch (error) {

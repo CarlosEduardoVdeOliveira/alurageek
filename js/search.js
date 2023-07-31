@@ -7,7 +7,7 @@ const list = document.querySelector("[data-products]");
 
 async function search(event) {
   event.preventDefault();
-  const searchTerm = await data.search(searchInput.value);
+  const searchProduct = await data.search(searchInput.value);
   if (searchInput.value === "") {
     Toastify({
       text: "Preencha o campo de pesquisa!",
@@ -24,32 +24,18 @@ async function search(event) {
     list.style.flexWrap = "wrap";
     searchInput.value = "";
 
-    if (searchTerm.length === 0) {
+    if (searchProduct.length === 0) {
       list.innerHTML = `<h2>Produto não encontrado!</h2>`;
     }
-    const email = sessionStorage.getItem("email");
-    const password = sessionStorage.getItem("password");
-    if (!email && !password) {
-      searchTerm.forEach((product) => {
-        list.innerHTML += template.templateLoggedOff(
-          product.id,
-          product.name,
-          product.price,
-          product.imageURL,
-          product.description
-        );
-      });
-    } else {
-      searchTerm.forEach((product) => {
-        list.innerHTML += template.templateLoggedIn(
-          product.id,
-          product.imageURL,
-          product.name,
-          product.price,
-          product.description
-        );
-      });
-    }
+    searchProduct.forEach((product) => {
+      list.innerHTML += template.templateLoggedOff(
+        product.id,
+        product.name,
+        product.price,
+        product.imageURL,
+        product.description
+      );
+    });
   }
 }
 buttonSearch.addEventListener("click", (event) => search(event));
