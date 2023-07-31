@@ -21,6 +21,7 @@ async function search(event) {
   } else {
     list.innerHTML = "";
     list.style.display = "flex";
+    list.style.flexWrap = "wrap";
     searchInput.value = "";
 
     if (searchTerm.length === 0) {
