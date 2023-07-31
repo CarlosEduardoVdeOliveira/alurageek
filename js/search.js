@@ -4,6 +4,9 @@ import { template } from "./templates.js";
 const buttonSearch = document.querySelector("[data-search='button']");
 const searchInput = document.querySelector("[data-search='input']");
 const list = document.querySelector("[data-products]");
+const email = sessionStorage.getItem("email");
+const password = sessionStorage.getItem("password");
+const pageHomeLogged = window.location.pathname === "/pages/home-logged.html";
 
 async function search(event) {
   event.preventDefault();
@@ -27,15 +30,28 @@ async function search(event) {
     if (searchProduct.length === 0) {
       list.innerHTML = `<h2>Produto não encontrado!</h2>`;
     }
-    searchProduct.forEach((product) => {
-      list.innerHTML += template.templateLoggedOff(
-        product.id,
-        product.name,
-        product.price,
-        product.imageURL,
-        product.description
-      );
-    });
+
+    if (email && password && pageHomeLogged) {
+      searchProduct.forEach((product) => {
+        list.innerHTML += template.templateLoggedIn(
+          product.id,
+          product.imageURL,
+          product.name,
+          product.price,
+          product.description
+        );
+      });
+    } else {
+      searchProduct.forEach((product) => {
+        list.innerHTML += template.templateLoggedOff(
+          product.id,
+          product.name,
+          product.price,
+          product.imageURL,
+          product.description
+        );
+      });
+    }
   }
 }
 buttonSearch.addEventListener("click", (event) => search(event));
