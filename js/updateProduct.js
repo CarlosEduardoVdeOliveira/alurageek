@@ -1,5 +1,5 @@
 import { data } from "./server.js";
-import { formatPrice } from "./utils/format.js";
+import { formatPrice, formatString } from "./utils/format.js";
 
 const updateForm = document.querySelector("[data-update-form]");
 const name = document.querySelector("[data-input='nameProduct']");
@@ -38,7 +38,7 @@ async function updatedProduct(event) {
       description: description.value,
       imageURL: image.value,
       price: formatPrice(price.value),
-      category: category.value,
+      category: formatString(category.value),
     };
     await data.updateProduct(
       product.id,

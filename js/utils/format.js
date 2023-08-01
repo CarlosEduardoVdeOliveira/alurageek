@@ -8,3 +8,12 @@ export function formatPrice(price) {
 
   return result;
 }
+
+export function formatString(category) {
+  const convertWordToLowerCase = category.toLowerCase();
+  const capitalFirstLetter = convertWordToLowerCase.replace(
+    convertWordToLowerCase[0],
+    convertWordToLowerCase[0].toUpperCase()
+  );
+  return capitalFirstLetter;
+}

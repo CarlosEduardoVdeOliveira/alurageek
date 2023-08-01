@@ -1,5 +1,5 @@
 import { data } from "./server.js";
-import { formatPrice } from "./utils/format.js";
+import { formatPrice, formatString } from "./utils/format.js";
 const formCreate = document.querySelector("[data-create-form]");
 
 async function create(event) {
@@ -23,7 +23,7 @@ async function create(event) {
       description.trim(),
       imageURL.trim(),
       formatPrice(price).trim(),
-      category.trim()
+      formatString(category).trim()
     );
 
     Toastify({
