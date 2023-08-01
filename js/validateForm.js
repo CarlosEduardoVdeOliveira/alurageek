@@ -49,7 +49,7 @@ const messages = {
     customError: "Preencha o preço no formato adequado (10,80).",
     tooShort: "O preço do produto deve ter no mínimo 3 caracteres.",
   },
-  imageURL: {
+  url: {
     valueMissing: "O campo de URL de imagem do produto não pode estar vazio.",
     patternMismatch: "Por favor, preencha uma url válida.",
   },

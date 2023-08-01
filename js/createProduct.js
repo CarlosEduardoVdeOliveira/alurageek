@@ -46,6 +46,7 @@ async function create(event) {
         color: "#F5F5F5",
       },
     }).showToast();
+    window.location.href = "../pages/login.html";
   }
 }
 formCreate.addEventListener("submit", (event) => create(event));
