@@ -1,7 +1,7 @@
 # AluraGeek
 Challenge 02 Alura + Oracle
 
-Uma aplicação para treinar e fixar os conhecimentos sobre CRUD
+Uma aplicação para treinar e fixar os conseitos e conhecimentos sobre CRUD
 
 ![](assets/images/home.png)
 ![](assets/images/login.png)
@@ -36,9 +36,9 @@ Por exemplo:
 ## :blue_book: Aplicação e Tecnológias
 |  |     |
 | -------------  | --- |
-| ✏️ Nome        | **Decodificador de texto**
+| ✏️ Nome        | **Alurageek**
 | 💻 Tecnologias | HTML, CSS, JavaScript
-| 🔗 URL         | https://carloseduardovdeoliveira.github.io/descodificador-de-texto/
+| 🔗 URL         | https://alurageek-394e56.netlify.app/index.html
 | 🔥 Desafio     | https://www.alura.com.br/challenges/challenge-one-logica/sprint01-construa-decodificador-texto-com-javascript
 
 
