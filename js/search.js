@@ -10,6 +10,7 @@ const pageHomeLogged = window.location.pathname === "/pages/home-logged.html";
 
 async function search(event) {
   event.preventDefault();
+  disableButton();
   const searchProduct = await data.search(searchInput.value);
   if (searchInput.value === "") {
     Toastify({
@@ -54,4 +55,11 @@ async function search(event) {
     }
   }
 }
+function disableButton() {
+  let largura = window.innerWidth;
+  if (largura <= 560) {
+    buttonSearch.disabled = true;
+  }
+}
+
 buttonSearch.addEventListener("click", (event) => search(event));

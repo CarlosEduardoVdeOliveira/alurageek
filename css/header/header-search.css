@@ -62,6 +62,12 @@
       border: none;
    }
 
+   .header__search--button:hover {
+      border: none;
+      color: var(--gray-200);
+      cursor: not-allowed;
+   }
+
    .header__search__group:nth-child(1) {
       order: 2;
    }
