@@ -38,8 +38,8 @@ Por exemplo:
 | -------------  | --- |
 | ✏️ Nome        | **Alurageek**
 | 💻 Tecnologias | HTML, CSS, JavaScript
-| 🔗 URL         | https://alurageek-394e56.netlify.app/index.html
-| 🔥 Desafio     | https://www.alura.com.br/challenges/challenge-one-logica/sprint01-construa-decodificador-texto-com-javascript
+| 🔗 URL         | https://alurageek-394e56.netlify.app
+| 🔥 Desafio     | https://www.alura.com.br/challenges/oracle-one-front-end/alurageek/alurageek-sprint02
 
 
 ## Agradecimentos
