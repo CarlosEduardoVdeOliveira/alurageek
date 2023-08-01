@@ -3,7 +3,7 @@ function templateCategories(category) {
 					<div class="products__category">
 						<h3 class="products__category--title">${category}</h3>
 						<a class="products__category--link" 
-            href="./alurageek/pages/list-products-per-category.html?q=${category}">
+            href="./pages/list-products-per-category.html?q=${category}">
 								Ver todos<i class="fa-solid fa-arrow-right"></i>
 						</a>
 					</div>
@@ -13,12 +13,18 @@ function templateCategories(category) {
 }
 
 function templateLoggedOff(id, name, price, image, description) {
+  let link = "";
+  if (window.location.pathname === "/index.html") {
+    link = `./pages/product-detail.html?q=${id}`;
+  } else {
+    link = `./product-detail.html?q=${id}`;
+  }
   const template = `
     <li class="product" title="${name}">
       <img class="product__image" src="${image}" alt="${description}">
       <span class="product__title">${name}</span>
       <p class="product__price">R$ ${price}</p>
-      <a class="product__link" href="./alurageek/pages/product-detail.html?q=${id}">Ver produto</a>
+      <a class="product__link" href="${link}">Ver produto</a>
     </li>
   `;
   return template;
@@ -46,7 +52,7 @@ function templateLoggedIn(id, image, name, price, description) {
           <button class="button__settings trash" id=${id} data-deleted>
             <i class="fa-solid fa-trash"></i>
           </button>
-          <a class="button__settings" id=${id} href="./alurageek/pages/update-product.html?q=${id}" data-updated>
+          <a class="button__settings" id=${id} href="./update-product.html?q=${id}" data-updated>
             <i class="fa-solid fa-pen"></i>
           </a>
       </div>

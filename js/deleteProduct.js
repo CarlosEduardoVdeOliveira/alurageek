@@ -22,6 +22,7 @@ async function deletedProduct() {
             color: "#F5F5F5",
           },
         }).showToast();
+        location.reload();
         await createListProducts();
       });
     });

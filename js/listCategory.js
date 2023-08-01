@@ -21,9 +21,10 @@ async function productsInCategory() {
     const products = await data.listAllProducts();
 
     categoryElement.forEach((element) => {
+      let count = 0;
       products.forEach((item) => {
         const category = element.dataset.category;
-        if (item.category === category) {
+        if (item.category === category && count < 6) {
           element.innerHTML += template.templateLoggedOff(
             item.id,
             item.name,
@@ -31,6 +32,7 @@ async function productsInCategory() {
             item.imageURL,
             item.description
           );
+          count++;
         }
       });
     });
