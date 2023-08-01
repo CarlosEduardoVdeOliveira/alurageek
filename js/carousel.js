@@ -5,7 +5,8 @@ const buttonCarouselRight = document.querySelector("[data-carousel='right']");
 const carouselContainer = document.querySelector("[data-carousel='container']");
 
 const timer = 10000;
-let positionImage = 1;
+let positionImage = 0;
+promotion(positionImage);
 setInterval(() => {
   imagePosition(positionImage++);
   if (positionImage >= 3) {
@@ -38,24 +39,24 @@ function promotion(position) {
       carouselContainer.innerHTML = template.templateCarousel(
         "Janeiro Promocional",
         "Produtos selecionados com 53% de desconto",
-        "Consoles",
-        "Ver Consoles"
+        "Jogos",
+        "Ver Jogos"
       );
       break;
     case 1:
       carouselContainer.innerHTML = template.templateCarousel(
         "Outubro Promocional",
         "Produtos selecionados com 20% de desconto",
-        "Consoles",
-        "Ver Consoles"
+        "Filmes",
+        "Ver Filmes"
       );
       break;
     case 2:
       carouselContainer.innerHTML = template.templateCarousel(
         "Desembro Promocional",
         "Produtos selecionados com 33% de desconto",
-        "Consoles",
-        "Ver Consoles"
+        "Diversos",
+        "Ver Diversos"
       );
       break;
   }
