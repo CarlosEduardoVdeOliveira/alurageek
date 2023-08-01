@@ -3,12 +3,7 @@ Challenge 02 Alura + Oracle
 
 Uma aplicação para treinar e fixar os conhecimentos sobre CRUD
 
-![](assets/Home.png)
-![](assets/Home - login.png)
 
-![](assets/home.png)
-
-![](assets/home.png)
 
 As "chaves" de criptografia utilizadas são:
 `A letra "e" é convertida para "enter"`
