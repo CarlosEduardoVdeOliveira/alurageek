@@ -28,9 +28,18 @@
       <a href="/alurageek/pages/login.html" class="button button--transparent" data-login>Login</a>
    </header>
    <main>
-      <section class="carrosel">
-         <a href="#">
-         </a>
+      <section class="carousel" data-carousel>
+         <button class="button__carousel button__carousel--left" data-carousel='left'>
+            <i class="fa-solid fa-chevron-left"></i>
+         </button>
+         <div class="carousel__container" data-carousel="container">
+            <h2 class="carousel__container__title">Dezembro Promocional</h2>
+            <p class="carousel__container__description">Produtos selecionados com 33% de desconto</p>
+            <a class="button button--blue">Ver Consoles</a>
+         </div>
+         <button class="button__carousel button__carousel--right" data-carousel='right'>
+            <i class="fa-solid fa-chevron-right"></i>
+         </button>
       </section>
       <section class="products" data-products>
 
@@ -85,6 +94,7 @@
       </ul>
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+   <script src="./js/carousel.js" type="module"></script>
    <script src="./js/listCategory.js" type="module"></script>
    <script src="./js/verifySession.js" type="module"></script>
    <script src="./js/validateForm.js" type="module"></script>

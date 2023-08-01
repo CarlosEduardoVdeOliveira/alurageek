@@ -1,3 +1,11 @@
+function templateCarousel(titel, description, category, button) {
+  const template = `<h2 class="carousel__container__title">${titel}</h2>
+    <p class="carousel__container__description">${description}</p>
+    <a href="./pages/list-products-per-category.html?q=${category}" 
+    class="button button--blue">${button}</a>`;
+  return template;
+}
+
 function templateCategories(category) {
   const template = `<div class="products__container__list">
 					<div class="products__category">
@@ -69,6 +77,7 @@ function templateLoggedIn(id, image, name, price, description) {
 }
 
 export const template = {
+  templateCarousel,
   templateCategories,
   templateLoggedOff,
   templateLoggedIn,

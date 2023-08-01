@@ -1,0 +1,24 @@
+.button__carousel {
+  position: absolute;
+  background-color: transparent;
+  font-size: 2rem;
+  color: var(--gray-500);
+}
+
+.button__carousel:hover {
+  color: var(--blue-500);
+}
+
+.button__carousel--left {
+  left: 1rem;
+}
+
+.button__carousel--right {
+  right: 1rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .button__carousel {
+    font-size: 1.5rem;
+  }
+}

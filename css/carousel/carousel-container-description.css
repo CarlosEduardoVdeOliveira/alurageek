@@ -1,0 +1,11 @@
+.carousel__container__description {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media screen and (max-width: 860px) {
+  .carousel__container__description {
+    font-size: 0.875rem;
+  }
+}
