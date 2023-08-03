@@ -38,7 +38,7 @@ function promotion(position) {
     case 0:
       carouselContainer.innerHTML = template.templateCarousel(
         "Nerd feliz",
-        "Felicidade dos Nerds: produtos com 53% de desconto! 😱",
+        "Orgulho Nerd: produtos com 53% de desconto! 😱",
         "Jogos",
         "Ver Jogos"
       );
