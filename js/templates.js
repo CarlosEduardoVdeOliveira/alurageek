@@ -22,10 +22,10 @@ function templateCategories(category) {
 
 function templateLoggedOff(id, name, price, image, description) {
   let link = "";
-  if (window.location.pathname === "/index.html") {
-    link = `./pages/product-detail.html?q=${id}`;
-  } else {
+  if (window.location.pathname !== "/index.html") {
     link = `./product-detail.html?q=${id}`;
+  } else {
+    link = `./pages/product-detail.html?q=${id}`;
   }
   const template = `
     <li class="product" title="${name}">
