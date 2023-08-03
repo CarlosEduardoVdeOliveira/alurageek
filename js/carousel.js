@@ -46,7 +46,7 @@ function promotion(position) {
     case 1:
       carouselContainer.innerHTML = template.templateCarousel(
         "Cinema especíal",
-        "Alugue seus filmes com 20% de desconto! 🎞",
+        "Alugue seus filmes com 20% de desconto!",
         "Filmes",
         "Ver Filmes"
       );
