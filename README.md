@@ -4,10 +4,6 @@ Este projeto foi desenvolvido como parte do projeto ONE da Alura e Oracle. O obj
 ## Visualização do Projeto
 ### Aqui estão algumas capturas de tela da nossa aplicação:
 ![](assets/images/home.png)
-![](assets/images/login.png)
-![](assets/images/homeLogged.png)
-![](assets/images/createProduct.png)
-![](assets/images/productDetails.png)
 
 ## :blue_book: Aplicação e Tecnológias
 |  |     |
