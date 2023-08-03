@@ -1,37 +1,9 @@
-# AluraGeek
-Challenge 02 Alura + Oracle
-
-Uma aplicação para treinar e fixar os conseitos e conhecimentos sobre CRUD
-
+# AluraGeek - Desafio 02 Alura + Oracle
+## Objetivo do Projeto
+Este projeto foi desenvolvido como parte do projeto ONE da Alura e Oracle. O objetivo era criar um e-commerce completo implementando as operações de CRUD - Criação (Create), Leitura (Read), Atualização (Update) e Deleção (Delete) de produtos. Durante o desenvolvimento, trabalhamos intensivamente com requisições a uma API e a manipulação de funções assíncronas.
+## Visualização do Projeto
+### Aqui estão algumas capturas de tela da nossa aplicação:
 ![](assets/images/home.png)
-![](assets/images/login.png)
-![](assets/images/homeLogged.png)
-![](assets/images/createProduct.png)
-![](assets/images/productDetails.png)
-
-
-As "chaves" de criptografia utilizadas são:
-`A letra "e" é convertida para "enter"`
-`A letra "i" é convertida para "imes"`
-`A letra "a" é convertida para "ai"`
-`A letra "o" é convertida para "ober"`
-`A letra "u" é convertida para "ufat"`
-
-**Requisitos:**
-- Deve funcionar apenas com letras minúsculas
-- Não devem ser utilizados letras com acentos nem caracteres especiais
-- Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original. 
-
-Por exemplo:
-`"gato" => "gaitober"`
-`gaitober" => "gato"`
-
-- A página deve ter campos para inserção do texto a ser criptografado ou descriptografado, e a pessoa usuária deve poder escolher entre as duas opções
-- O resultado deve ser exibido na tela.
-
-**Extras:**
-- Um botão que copie o texto criptografado/descriptografado para a área de transferência 
-- ou seja, que tenha a mesma funcionalidade do `ctrl+C` ou da opção "copiar" do menu dos aplicativos.]
 
 ## :blue_book: Aplicação e Tecnológias
 |  |     |
@@ -44,7 +16,7 @@ Por exemplo:
 
 ## Agradecimentos
 
-Gostaria de agradecer a Alura e Oracle por proporcionar essa oportunidade de aprendizado e aprimoramento das habilidades em desenvolvimento frontend. Foi um desafio muito interessante e gratificante de ser realizado.
+Gostaria de expressar minha gratidão à Alura e à Oracle por proporcionarem esta oportunidade de aprendizado e aprimoramento das minhas habilidades em desenvolvimento frontend. Foi um desafio muito interessante e gratificante.
 
 ## Referências:
 
