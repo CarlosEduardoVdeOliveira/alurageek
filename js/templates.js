@@ -22,7 +22,7 @@ function templateCategories(category) {
 
 function templateLoggedOff(id, name, price, image, description) {
   let link = "";
-  if (window.location.pathname !== "/index.html") {
+  if (window.location.pathname !== "/") {
     link = `./product-detail.html?q=${id}`;
   } else {
     link = `./pages/product-detail.html?q=${id}`;
