@@ -21,18 +21,18 @@ function templateCategories(category) {
 }
 
 function templateLoggedOff(id, name, price, image, description) {
-  /* let link = "";
+  let link = "";
   if (window.location.pathname !== "/index.html") {
     link = `./product-detail.html?q=${id}`;
   } else {
-    link = ;
-  } */
+    link = `./pages/product-detail.html?q=${id}`;
+  }
   const template = `
     <li class="product" title="${name}">
       <img class="product__image" src="${image}" alt="${description}">
       <span class="product__title">${name}</span>
       <p class="product__price">R$ ${price}</p>
-      <a class="product__link" href="${`./pages/product-detail.html?q=${id}`}">Ver produto</a>
+      <a class="product__link" href="${link}">Ver produto</a>
     </li>
   `;
   return template;
