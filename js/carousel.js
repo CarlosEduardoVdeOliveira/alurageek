@@ -37,16 +37,16 @@ function promotion(position) {
   switch (position) {
     case 0:
       carouselContainer.innerHTML = template.templateCarousel(
-        "Janeiro Promocional",
-        "Produtos selecionados com 53% de desconto",
+        "Nerd feliz",
+        "Para felicidade dos Nerd's produtos com 53% de desconto",
         "Jogos",
         "Ver Jogos"
       );
       break;
     case 1:
       carouselContainer.innerHTML = template.templateCarousel(
-        "Outubro Promocional",
-        "Produtos selecionados com 20% de desconto",
+        "Cinema especíal",
+        "Alugue seus filmes com 20% de desconto",
         "Filmes",
         "Ver Filmes"
       );
