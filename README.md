@@ -3,7 +3,7 @@
 Este projeto foi desenvolvido como parte do projeto ONE da Alura e Oracle. O objetivo era criar um e-commerce completo implementando as operações de CRUD - Criação (Create), Leitura (Read), Atualização (Update) e Deleção (Delete) de produtos. Durante o desenvolvimento, trabalhamos intensivamente com requisições a uma API e a manipulação de funções assíncronas.
 ## Visualização do Projeto
 ### Aqui estão algumas capturas de tela da nossa aplicação:
-![](assets/images/home.png)
+![](assets/images/project.png)
 
 ## :blue_book: Aplicação e Tecnológias
 |  |     |
